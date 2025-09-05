@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tourboxkiller"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:7:5-66
+13-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:7:22-63
+14
+15    <permission
+15-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+16        android:name="com.tourboxkiller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.tourboxkiller.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:9:5-30:19
+22        android:allowBackup="true"
+22-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:10:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.12.0] /Users/dev2/.gradle/caches/transforms-3/04706d92c70113f4d3c0f60af327bec7/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:11:9-65
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:12:9-54
+27        android:label="@string/app_name"
+27-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:13:9-41
+28        android:networkSecurityConfig="@xml/network_security_config"
+28-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:16:9-69
+29        android:supportsRtl="true"
+29-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:14:9-35
+30        android:theme="@style/Theme.TourBoxKiller"
+30-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:15:9-51
+31        android:usesCleartextTraffic="true" >
+31-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:17:9-44
+32        <activity
+32-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:19:9-29:20
+33            android:name="com.tourboxkiller.MainActivity"
+33-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:20:13-41
+34            android:exported="true"
+34-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:21:13-36
+35            android:label="@string/app_name"
+35-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:22:13-45
+36            android:screenOrientation="portrait"
+36-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:24:13-49
+37            android:theme="@style/Theme.TourBoxKiller" >
+37-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:23:13-55
+38            <intent-filter>
+38-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:25:13-28:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:26:17-69
+39-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:26:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:27:17-77
+41-->/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/src/main/AndroidManifest.xml:27:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+47            android:authorities="com.tourboxkiller.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.3.0] /Users/dev2/.gradle/caches/transforms-3/79eb4a0c5b636dfec51319fda79d56ad/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dev2/.gradle/caches/transforms-3/e1f42e5bcf5a8f8e1d222bca7e707d61/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dev2/.gradle/caches/transforms-3/e1f42e5bcf5a8f8e1d222bca7e707d61/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dev2/.gradle/caches/transforms-3/e1f42e5bcf5a8f8e1d222bca7e707d61/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+57                android:value="androidx.startup" />
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+58        </provider>
+59
+60        <receiver
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+61            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+62            android:directBootAware="false"
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+63            android:enabled="true"
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+64            android:exported="true"
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+65            android:permission="android.permission.DUMP" >
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+66            <intent-filter>
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+67                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+68            </intent-filter>
+69            <intent-filter>
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+70                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+71            </intent-filter>
+72            <intent-filter>
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+73                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+74            </intent-filter>
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+76                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/dev2/.gradle/caches/transforms-3/620893f59dc4ff35a5a608047cbede38/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+77            </intent-filter>
+78        </receiver>
+79    </application>
+80
+81</manifest>

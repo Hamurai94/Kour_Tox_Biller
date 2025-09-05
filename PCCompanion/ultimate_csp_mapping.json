@@ -1,0 +1,98 @@
+{
+  "F1": {
+    "assigned": true,
+    "icon": "❓",
+    "description": "Help/Tutorial",
+    "command": "helponlinehowto",
+    "command_type": "advancedcommand",
+    "modifier": 0,
+    "source": "menu_shortcuts"
+  },
+  "F2": {
+    "assigned": true,
+    "icon": "✂️",
+    "description": "Cut",
+    "command": "cut",
+    "command_type": "basiccommand",
+    "modifier": 0,
+    "source": "menu_shortcuts"
+  },
+  "F3": {
+    "assigned": true,
+    "icon": "📋",
+    "description": "Copy",
+    "command": "copy",
+    "command_type": "basiccommand",
+    "modifier": 0,
+    "source": "menu_shortcuts"
+  },
+  "F4": {
+    "assigned": true,
+    "icon": "📥",
+    "description": "Paste",
+    "command": "paste",
+    "command_type": "basiccommand",
+    "modifier": 0,
+    "source": "menu_shortcuts"
+  },
+  "F5": {
+    "assigned": true,
+    "icon": "💧",
+    "description": "Round watercolor brush",
+    "command": "custom_tool_41",
+    "tool_name": "Round watercolor brush",
+    "shortcut_key": 41,
+    "source": "tool_shortcuts"
+  },
+  "F6": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F6",
+    "command": null,
+    "source": "unassigned"
+  },
+  "F7": {
+    "assigned": true,
+    "icon": "🔄",
+    "description": "Invert Selection",
+    "command": "selectinvert",
+    "command_type": "advancedcommand",
+    "modifier": 2,
+    "source": "menu_shortcuts"
+  },
+  "F8": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F8",
+    "command": null,
+    "source": "unassigned"
+  },
+  "F9": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F9",
+    "command": null,
+    "source": "unassigned"
+  },
+  "F10": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F10",
+    "command": null,
+    "source": "unassigned"
+  },
+  "F11": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F11",
+    "command": null,
+    "source": "unassigned"
+  },
+  "F12": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F12",
+    "command": null,
+    "source": "unassigned"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "F1": {
+    "command": "helponlinehowto",
+    "full_shortcut": "F1",
+    "description": "Help/Tutorial"
+  },
+  "F2": {
+    "command": "cut",
+    "full_shortcut": "F2",
+    "description": "Cut"
+  },
+  "F3": {
+    "command": "copy",
+    "full_shortcut": "F3",
+    "description": "Copy"
+  },
+  "F4": {
+    "command": "paste",
+    "full_shortcut": "F4",
+    "description": "Paste"
+  },
+  "F5": {
+    "command": null,
+    "full_shortcut": "F5",
+    "description": "Unassigned F5"
+  },
+  "F6": {
+    "command": null,
+    "full_shortcut": "F6",
+    "description": "Unassigned F6"
+  },
+  "F7": {
+    "command": "selectinvert",
+    "full_shortcut": "shift+F7",
+    "description": "Invert Selection"
+  },
+  "F8": {
+    "command": null,
+    "full_shortcut": "F8",
+    "description": "Unassigned F8"
+  },
+  "F9": {
+    "command": null,
+    "full_shortcut": "F9",
+    "description": "Unassigned F9"
+  },
+  "F10": {
+    "command": null,
+    "full_shortcut": "F10",
+    "description": "Unassigned F10"
+  },
+  "F11": {
+    "command": null,
+    "full_shortcut": "F11",
+    "description": "Unassigned F11"
+  },
+  "F12": {
+    "command": null,
+    "full_shortcut": "F12",
+    "description": "Unassigned F12"
+  }
+}

@@ -1,0 +1,22 @@
+# Art Remote Control - Cross-Platform Requirements
+
+# Core dependencies (Windows + macOS)
+websockets>=12.0
+pyautogui>=0.9.54
+pynput>=1.7.6
+psutil>=5.9.0
+
+# Additional utilities
+Pillow>=10.0.0
+keyboard>=0.13.5
+
+# Windows-specific dependencies
+pywin32==306; sys_platform == "win32"
+
+# macOS-specific dependencies  
+pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"
+pyobjc-framework-Quartz>=10.0; sys_platform == "darwin"
+pyobjc-framework-ApplicationServices>=10.0; sys_platform == "darwin"
+
+# Optional: Enhanced macOS integration
+pyobjc-core>=10.0; sys_platform == "darwin"

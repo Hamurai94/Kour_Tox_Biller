@@ -1,0 +1,41 @@
+ArtRemoteControl/
+├── AndroidApp/                          # Android Studio Project
+│   ├── app/
+│   │   ├── src/main/
+│   │   │   ├── java/com/artremote/
+│   │   │   │   ├── MainActivity.kt      # Main activity
+│   │   │   │   ├── WebSocketClient.kt   # Network communication
+│   │   │   │   └── ui/
+│   │   │   │       ├── screens/
+│   │   │   │       │   └── RemoteControlScreen.kt  # TourBox-inspired UI
+│   │   │   │       └── theme/
+│   │   │   │           ├── Theme.kt     # Material Design 3 theme
+│   │   │   │           └── Type.kt      # Typography
+│   │   │   ├── res/
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── strings.xml      # String resources
+│   │   │   │   │   ├── colors.xml       # Color palette
+│   │   │   │   │   └── themes.xml       # Theme definitions
+│   │   │   │   └── layout/              # XML layouts (if needed)
+│   │   │   └── AndroidManifest.xml      # App permissions & config
+│   │   └── build.gradle                 # App dependencies
+│   └── build.gradle                     # Project build config
+│
+├── PCCompanion/                         # Python Server
+│   ├── art_remote_server.py            # Main server with GUI
+│   └── requirements.txt                # Python dependencies
+│
+├── PROJECT_OVERVIEW.md                  # Project details
+├── README.md                           # Main documentation
+├── SETUP_GUIDE.md                      # Detailed setup instructions
+└── project_structure.txt              # This file
+
+Key Features Implemented:
+✅ TourBox-inspired circular dials for zoom/rotate
+✅ Customizable 8-button grid for tools/shortcuts
+✅ WebSocket real-time communication
+✅ Auto-detection of Krita/Clip Studio Paint
+✅ Haptic feedback for tactile response
+✅ Material Design 3 modern UI
+✅ Windows system tray PC companion
+✅ Configurable shortcuts per application

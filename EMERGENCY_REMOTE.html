@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 EMERGENCY ART REMOTE</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #667eea; margin: 0; padding: 20px; color: white; text-align: center; }
+        .status { padding: 15px; margin: 20px 0; border-radius: 10px; font-weight: bold; font-size: 18px; }
+        .connected { background: #4CAF50; }
+        .disconnected { background: #f44336; }
+        button { padding: 25px; font-size: 20px; font-weight: bold; border: none; border-radius: 15px; 
+                background: rgba(255,255,255,0.3); color: white; cursor: pointer; margin: 10px; width: 120px; }
+        button:active { transform: scale(0.95); background: rgba(255,255,255,0.5); }
+        input { width: 80%; padding: 15px; margin: 10px; border: none; border-radius: 10px; font-size: 16px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>🚨 EMERGENCY ART REMOTE</h1>
+    <div id="status" class="status disconnected">DISCONNECTED</div>
+    <input id="ip" placeholder="PC IP Address" value="192.168.2.5">
+    <br><button onclick="connect()">🔌 CONNECT NOW</button>
+    
+    <div id="controls" style="display:none;">
+        <br><br><h2>🎨 ART CONTROLS</h2>
+        <button onclick="send('undo')">↶ UNDO</button>
+        <button onclick="send('redo')">↷ REDO</button><br>
+        <button onclick="send('zoom_in')">🔍+ ZOOM</button>
+        <button onclick="send('zoom_out')">🔍- ZOOM</button><br>
+        <button onclick="send('save')">💾 SAVE</button>
+    </div>
+
+    <script>
+        let ws = null;
+        let connected = false;
+
+        function updateStatus(isConnected) {
+            const status = document.getElementById('status');
+            const controls = document.getElementById('controls');
+            connected = isConnected;
+            if (isConnected) {
+                status.textContent = '✅ CONNECTED - READY TO ART!';
+                status.className = 'status connected';
+                controls.style.display = 'block';
+            } else {
+                status.textContent = '❌ DISCONNECTED';
+                status.className = 'status disconnected';
+                controls.style.display = 'none';
+            }
+        }
+
+        function connect() {
+            const ip = document.getElementById('ip').value || '192.168.2.5';
+            const url = `ws://${ip}:9999`;
+            console.log('🔌 CONNECTING TO:', url);
+            
+            if (ws) ws.close();
+            ws = new WebSocket(url);
+            
+            ws.onopen = () => { console.log('✅ CONNECTED!'); updateStatus(true); };
+            ws.onclose = () => { console.log('❌ DISCONNECTED'); updateStatus(false); };
+            ws.onerror = (e) => { console.error('❌ ERROR:', e); updateStatus(false); };
+            ws.onmessage = (e) => { console.log('📨 RESPONSE:', e.data); };
+        }
+
+        function send(action) {
+            if (!connected || !ws) { alert('NOT CONNECTED!'); return; }
+            const cmd = JSON.stringify({action: action});
+            ws.send(cmd);
+            console.log('📤 SENT:', action);
+        }
+
+        setTimeout(connect, 1000);
+    </script>
+</body>
+</html>

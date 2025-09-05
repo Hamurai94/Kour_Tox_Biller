@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="tourbox_dark">#FF121212</color>
+    <color name="tourbox_green">#FF1DB954</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">TourBox Killer</string>
+    <string name="brush_size">Brush Size</string>
+    <string name="canvas_navigation">Canvas Navigation</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="delete_layer">Delete Layer</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="layers">Layers</string>
+    <string name="new_layer">New Layer</string>
+    <string name="redo">Redo</string>
+    <string name="server_address">Server Address</string>
+    <string name="tools">Tools</string>
+    <string name="undo">Undo</string>
+    <string name="zoom">Zoom</string>
+    <style name="Theme.TourBoxKiller" parent="Theme.AppCompat.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/tourbox_green</item>
+        <item name="colorPrimaryDark">@color/tourbox_dark</item>
+        <item name="colorAccent">@color/teal_200</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryDark</item>
+        
+    </style>
+</resources>

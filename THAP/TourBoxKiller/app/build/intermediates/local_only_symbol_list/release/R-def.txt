@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color tourbox_dark
+color tourbox_green
+color white
+string app_name
+string brush_size
+string canvas_navigation
+string connect
+string connected
+string connection_status
+string delete_layer
+string disconnect
+string disconnected
+string layers
+string new_layer
+string redo
+string server_address
+string tools
+string undo
+string zoom
+style Theme.TourBoxKiller
+xml backup_rules
+xml data_extraction_rules
+xml network_security_config

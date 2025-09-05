@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TourBox Killer</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="server_address">Server Address</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="zoom">Zoom</string>
+    <string name="brush_size">Brush Size</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="new_layer">New Layer</string>
+    <string name="delete_layer">Delete Layer</string>
+    <string name="canvas_navigation">Canvas Navigation</string>
+    <string name="tools">Tools</string>
+    <string name="layers">Layers</string>
+</resources>

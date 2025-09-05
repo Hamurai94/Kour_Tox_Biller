@@ -1,0 +1,1601 @@
+{
+  "version": "1.0.0",
+  "generated_at": "/Users/dev2/Desktop/ArtRemoteControl/PCCompanion",
+  "total_brushes": 166,
+  "categories": {
+    "Other": [
+      {
+        "uuid": "a813f076e8-0144-9d93-bf60-1966a08a02",
+        "name": "楽ちん体液ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/31 18:25:12",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/59/33/f065ea576d-5140-469b-6e24-827bab7e89"
+      },
+      {
+        "uuid": "68ec373b9b-ff48-23aa-ce29-53a5af1539",
+        "name": "煙 3",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:28:13",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+      },
+      {
+        "uuid": "748e341649-7346-f7a4-12b8-35ad8df0cb",
+        "name": "煙 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:28:14",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+      },
+      {
+        "uuid": "674b866bc0-7b4a-e3a3-aec3-8621728d85",
+        "name": "煙",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:28:14",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+      },
+      {
+        "uuid": "9e33dd4832-c240-23ab-6a5d-9549056962",
+        "name": "魔導書",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:21",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "c207d8e396-074e-71b3-9bbe-3ea386af4b",
+        "name": "魔導書 本のみ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:21",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "3be1bac881-d941-26ac-dd36-8abe233dad",
+        "name": "魔導書斜め",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:22",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "749435357d-ba42-5da0-afa8-7ba117659a",
+        "name": "魔導書バラ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:22",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "58f66ca35d-9f47-f6b8-dcde-3476b7fce4",
+        "name": "魔導書 縦積み",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:23",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "cc16f8f3d2-bb4e-0e99-71a1-c211452783",
+        "name": "魔導書 背表紙のみ 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:23",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "00f97e4ca3-054c-c181-9a24-a032b1e335",
+        "name": "魔導書 背表紙のみ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:42:24",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+      },
+      {
+        "uuid": "e1dd3c9528-5444-5cb0-16a7-44f16d3220",
+        "name": "墨竹葉1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:35:11",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/09/d4cb603f8b-844d-77be-e54e-7bdbdaf393"
+      },
+      {
+        "uuid": "5acd5fa3da-5648-738a-f3f7-7c323e3e05",
+        "name": "墨竹葉 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:35:11",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/09/d4cb603f8b-844d-77be-e54e-7bdbdaf393"
+      },
+      {
+        "uuid": "15be8c6cef-0d46-5bb7-9ad2-5bd0e71ca1",
+        "name": "墨竹",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:35:12",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/09/d4cb603f8b-844d-77be-e54e-7bdbdaf393"
+      },
+      {
+        "uuid": "0b1bea0e2a-c143-e7a0-a82f-b1927ff8c4",
+        "name": "血飛沫　A",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:06",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/93/29/2fac12cc6f-634c-08a1-af8c-d6584b19db"
+      },
+      {
+        "uuid": "a712689f19-2a49-ceac-cb28-5f9026418b",
+        "name": "血飛沫　B",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:07",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/93/29/2fac12cc6f-634c-08a1-af8c-d6584b19db"
+      },
+      {
+        "uuid": "f15d95b8bf-fa46-0bba-1c43-e0ade3a99d",
+        "name": "血飛沫　C",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:07",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/93/29/2fac12cc6f-634c-08a1-af8c-d6584b19db"
+      },
+      {
+        "uuid": "15fa99b8bd-4540-939a-e91b-3d8f9cc4e6",
+        "name": "血飛沫　mix",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:08",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/93/29/2fac12cc6f-634c-08a1-af8c-d6584b19db"
+      },
+      {
+        "uuid": "cc19e9e488-9345-7389-4c65-5d01289844",
+        "name": "えんぴつ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:17",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/94/20/9b6efba487-6043-ada1-f632-e99c61241b"
+      },
+      {
+        "uuid": "8d1f92300a-df41-049d-b0e8-887386c037",
+        "name": "えのぐ-しかく",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:18",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/94/20/9b6efba487-6043-ada1-f632-e99c61241b"
+      },
+      {
+        "uuid": "1c0185fd51-8541-e583-f094-3738803542",
+        "name": "えのぐ-まる",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:18",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/94/20/9b6efba487-6043-ada1-f632-e99c61241b"
+      },
+      {
+        "uuid": "695b38cfdb-bc4b-68ac-d150-1e7df9e185",
+        "name": "朽ちさせるブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 20:11:04",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/94/10/ad8413bbbb-7645-a6a7-e50b-539b0cd918"
+      },
+      {
+        "uuid": "bd84750681-b645-78ba-5f6b-ca818248e1",
+        "name": "Smoke 8",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:33:56",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "8431b9ae6b-ff43-cf9f-9350-1d11d499b8",
+        "name": "Smoke 7",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:33:57",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "11e446bcf6-564b-8784-eca3-d8bc2a015e",
+        "name": "Smoke 6",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:33:58",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "ffec6ee174-fd4a-e1a9-7828-ac1495c33f",
+        "name": "Smoke 5",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:33:58",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "e0d31ce86d-6d4d-2fa6-d41c-a2d7c67f2a",
+        "name": "Smoke 4",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:33:59",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "7edf3a9a11-e94a-839d-4897-85215f5b8b",
+        "name": "Smoke 3",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:34:00",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "52d1d5005a-0e47-049a-5857-1036a0f982",
+        "name": "Smoke 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:34:00",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "f00ef42844-f64b-2c97-8217-dc41f3dfe9",
+        "name": "Smoke 1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:34:01",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/18/79/7d6cda0efd-cc44-d593-26a1-b36008b6aa"
+      },
+      {
+        "uuid": "6909d5fd6d-574b-899f-55c3-9842ad044a",
+        "name": "Cinematic Dust Round Macro",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/22 14:02:01",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/16/24/a45f9b526f-4c4b-b090-c15b-731d5141ee"
+      },
+      {
+        "uuid": "751aaf382b-344f-e3b1-9e10-d225051bcb",
+        "name": "Cinematic Dust Hexagon Macro",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/22 14:02:02",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/16/24/a45f9b526f-4c4b-b090-c15b-731d5141ee"
+      },
+      {
+        "uuid": "7ab2d85a59-454c-3dbc-06ff-1afc454b49",
+        "name": "Cinematic Dusts Round Standard",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/22 14:02:03",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/16/24/a45f9b526f-4c4b-b090-c15b-731d5141ee"
+      },
+      {
+        "uuid": "1aea514eb4-1741-d5aa-da4b-c30e02b78a",
+        "name": "Cinematic Dusts Hexagon Standard",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/22 14:02:03",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/16/24/a45f9b526f-4c4b-b090-c15b-731d5141ee"
+      },
+      {
+        "uuid": "1d4f55e096-1045-fca5-56cc-7d0ead4f77",
+        "name": "Cinematic Dust Micro",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/22 14:02:04",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/16/24/a45f9b526f-4c4b-b090-c15b-731d5141ee"
+      },
+      {
+        "uuid": "533b221875-ef44-32bb-f6d6-71ac85adfb",
+        "name": "草ブラシ雑草混合",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:36",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "4d680e85ec-694f-ba81-0a5e-f9baed970f",
+        "name": "草ブラシ雑草 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:37",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "58ae82d9d7-8144-3792-5865-cc8668d322",
+        "name": "草ブラシ雑草",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:37",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "ad3a5f1746-194b-1cb2-43e2-1f1be9d41c",
+        "name": "地面ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:38",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "78a1e6012e-8949-4389-439a-8b9e628f48",
+        "name": "草ブラシ低い草",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:39",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "2c1f86a243-4c40-ab96-c02c-e8a70e42a9",
+        "name": "草ブラシ低",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:39",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "baf5a33cb0-814a-8198-accc-577be0f3f7",
+        "name": "草ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:40",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "90c734d2eb-1e41-769a-49b3-8fecd55ae0",
+        "name": "草ブラシリボン",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:41",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/89/91/e58000b784-594a-afbc-e777-83e69e1cf2"
+      },
+      {
+        "uuid": "d3498beac5-894c-eb8e-f5df-7326081dd4",
+        "name": "笹ブラシ→",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:34:41",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/87/85/dbeae1fd93-5241-278d-8166-1ebde34baf"
+      },
+      {
+        "uuid": "417a6ec10e-2746-28a8-cca5-0eaba5145c",
+        "name": "笹ブラシ←",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:34:42",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/87/85/dbeae1fd93-5241-278d-8166-1ebde34baf"
+      },
+      {
+        "uuid": "e9bbaeef5d-6a43-c080-3ff3-8e40a66328",
+        "name": "笹ブラシ影",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:34:43",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/87/85/dbeae1fd93-5241-278d-8166-1ebde34baf"
+      },
+      {
+        "uuid": "bb7c051004-3942-1bab-7cf8-32d132a17c",
+        "name": "竹葉っぱ 1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:34:43",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/87/85/dbeae1fd93-5241-278d-8166-1ebde34baf"
+      },
+      {
+        "uuid": "88c72d2f52-4640-0f8f-0c5d-9573b22338",
+        "name": "血管ブラシ ぐにゃ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:53",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/74/36/57a31fbd92-ab4d-7fbe-c4e1-119535469d"
+      },
+      {
+        "uuid": "614164af5f-9940-36bb-478a-22d44f4cae",
+        "name": "血管ブラシ 直",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:53",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/74/36/57a31fbd92-ab4d-7fbe-c4e1-119535469d"
+      },
+      {
+        "uuid": "ee6e228c26-ac40-1da6-fb17-34e1e2b3e7",
+        "name": "血管ブラシ 曲",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:54",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/74/36/57a31fbd92-ab4d-7fbe-c4e1-119535469d"
+      },
+      {
+        "uuid": "3983a9c41f-cb4b-8a94-6ace-c0fb685c34",
+        "name": "血管ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:40:54",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/74/36/57a31fbd92-ab4d-7fbe-c4e1-119535469d"
+      },
+      {
+        "uuid": "91ee1a5436-b441-64b3-3fbe-d2dda40023",
+        "name": "M_煙(E)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:32:35",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/86/55/f48984421a-ba4d-d5b4-fa93-d97d6f4d3c"
+      },
+      {
+        "uuid": "35d4ca889b-b04a-34ad-c0c9-803d57bb6d",
+        "name": "M_煙(D)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:32:36",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/86/55/f48984421a-ba4d-d5b4-fa93-d97d6f4d3c"
+      },
+      {
+        "uuid": "1e330190a1-364c-3f9f-c2fd-4d23dc409c",
+        "name": "M_煙(C)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:32:36",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/86/55/f48984421a-ba4d-d5b4-fa93-d97d6f4d3c"
+      },
+      {
+        "uuid": "3c6005fc84-cb4a-02a2-1186-5a82e29b41",
+        "name": "M_煙(B)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:32:37",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/86/55/f48984421a-ba4d-d5b4-fa93-d97d6f4d3c"
+      },
+      {
+        "uuid": "19361c4631-f44c-8094-b4d1-628a79005c",
+        "name": "M_煙(A)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:32:37",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/86/55/f48984421a-ba4d-d5b4-fa93-d97d6f4d3c"
+      },
+      {
+        "uuid": "095deb74c3-9f41-a792-dba8-fe99fed734",
+        "name": "遠景の葉",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/31 17:50:17",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/72/20/f6163a0ff4-9042-cdbe-20fe-c5b07a5c49"
+      },
+      {
+        "uuid": "c05e7e665c-0e47-37be-3dd6-0a85eb5292",
+        "name": "捻じれ煙ブラシ_PG0330",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/31 17:49:15",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/44/70/a2b2edf15c-5440-56a6-7425-6320bce79b"
+      },
+      {
+        "uuid": "c7ce3ec2f4-b747-6990-9032-41f820a439",
+        "name": "Spray Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:08",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "bb79238279-834f-739c-25ec-ca43910f0f",
+        "name": "Fluffy Dense Dots Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:09",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "cbca31f9f6-8140-f28d-6ea5-3562087f31",
+        "name": "Less Dense Fluffy Dot Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:09",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "e13a638a1c-484b-ceb7-4ea9-8278e54ed3",
+        "name": "Motion Blur Brush Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:10",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "3638fb571b-bd4c-178c-c3ce-db10c3c197",
+        "name": "Straight Lines Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:11",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "530bb310c0-a540-fcad-1367-74b1ce7b48",
+        "name": "Painterly Wall",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:12",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "30e2659ea1-7f47-3ca6-015e-1dc8d23391",
+        "name": "Diamond Wall",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:12",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "13dc0e2dec-cf44-72b7-8f91-8aa638491c",
+        "name": "Brush Dab",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:13",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "3d2bc41056-3247-1d99-d0e2-b3ac84c1d1",
+        "name": "Spraypaint Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:13",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "756ec78e01-fb47-6681-4e2e-210cf03358",
+        "name": "Square Krackle",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:14",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "d829624304-ec43-5993-47c7-7d073bd5ec",
+        "name": "Arrows Wall",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:14",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "06709ca89a-3446-248a-1ca1-52ec48f5cb",
+        "name": "Canvas Texture Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:15",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "de0bcd8931-744a-fdaf-00c7-b5ab2c5af9",
+        "name": "Crunchy Inky Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:16",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "b66ced0b42-514f-3b82-f118-70b43f721f",
+        "name": "Canvas Thumbprint Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:17",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "f511bb3b93-ca48-c3a9-f3a6-cb913c9d05",
+        "name": "Lazy Halftone Cloud",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:17",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "8cdafbda45-d945-1fb3-e779-dcc301e2b7",
+        "name": "Square Stamp Wall Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:18",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "db449b0a2b-b145-a8ac-5e65-bcae8c9f42",
+        "name": "Blur Square Wall",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:18",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "2451ac6f39-2b41-53a2-f30e-daa6b8f2f3",
+        "name": "Scribble Noise Back and Forth",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:19",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "53a86b10cd-e54a-f78b-bb84-0eff158c64",
+        "name": "Scribble Noise Random",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:19",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "68bc849279-584a-b2b1-5464-9c808cf786",
+        "name": "Scribble Application",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:20",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "f2d1673530-624f-0393-b8cc-886c526137",
+        "name": "Line Mess Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:20",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "2227765746-5f47-03b4-c6e8-46430f8271",
+        "name": "Line Noise Spray",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:21",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "1c892e4199-c14d-4f91-55ce-87ab10ada8",
+        "name": "Sparkling Circle Glitter",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:02",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "d8dc4bd33b-164e-ecaa-6115-dfd03d380d",
+        "name": "Sparkling Circle Rainbow Sparks 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:03",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "35052ac63d-fd4b-c499-543a-a3e1de2de6",
+        "name": "Sparkling Circle Bokeh",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:03",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "13bdf6c993-c249-1fa9-510c-1ffd4d6be7",
+        "name": "Sparkling Circle 4Stars Dots",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:04",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "39801d484b-5343-7d89-feef-fa73cc18ee",
+        "name": "Sparkling Circle 4Stars Diamonds",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:04",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "c258e38e04-6542-b2b7-a5af-35345d28e7",
+        "name": "Sparkling Circle 4Stars Center",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:05",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "72e7afc585-da41-b3a2-9914-c9157533d8",
+        "name": "Sparkling Circle Rainbow Sparks",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:05",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "3f507b66f1-7a4b-1d91-9816-c2d5105d74",
+        "name": "Sparkling Circle Sparks Round",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:06",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "98f488a15e-194f-3a83-7216-80da64e253",
+        "name": "Sparkling Circle 5Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:06",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "4cb4340a27-bf48-7abb-ac59-1bda452281",
+        "name": "Sparkling Circle Sparks",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:07",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "b425faf925-b748-20bb-a938-5f332afeb0",
+        "name": "Sparkling Circle Cartoon Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:08",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "ee38b4839c-4c48-29b4-9710-cdeed033dc",
+        "name": "Sparkling Circle Dots",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:08",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "eef07b52f9-c144-98a2-5b32-6eff32f911",
+        "name": "Sparkling Circle Diamonds",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:09",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "b26e841ea0-0348-d2a5-febb-6a9b7e4c1e",
+        "name": "Sparkling Circle 4Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:09",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "7a7b326db1-eb42-1faa-5129-8969238dc7",
+        "name": "Sparkling Galaxy Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:10",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "2517aa30ae-cb49-8dac-f527-9c0481cec9",
+        "name": "Sparkling Galaxy Dots",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:10",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "3f9bc8b520-2343-18bd-9696-3213d79b7e",
+        "name": "Sparkling Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:11",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "21f4ce38a4-114c-8bbb-75de-d2771af2f2",
+        "name": "Sparkling Spray Stars Mix",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:11",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "4a533cb260-a849-129f-b4c1-ed492a3063",
+        "name": "Sparkling Spray 4Stars",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:12",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "1418b56fa1-b84d-e590-7987-8189d1530a",
+        "name": "Sparkling Stamp 4Star",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:13",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "95f580fb31-e445-21a5-674f-e02270d0c4",
+        "name": "Sparkling Line 4Star",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:13",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "c61f526fd5-4e4a-6095-dd42-235029cbc8",
+        "name": "Sparkling Line 5Star",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:48:14",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/54/96/cd9495746f-4744-dab6-af00-7aee34638b"
+      },
+      {
+        "uuid": "9ac86b733a-9f4c-c6a3-74cd-5d2fbbfab3",
+        "name": "流水ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:32",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/98/81/21450dc682-c04b-53a8-e857-344575c581"
+      },
+      {
+        "uuid": "5e98889d92-cb4f-09bf-f21f-a554707cb1",
+        "name": "流水ブラシ 大",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:33",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/98/81/21450dc682-c04b-53a8-e857-344575c581"
+      },
+      {
+        "uuid": "c886247f8e-d140-a39d-696a-caed7562eb",
+        "name": "Bamboo Stem untextured",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:27",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "fc812a9905-7040-62b6-af38-26e17ac196",
+        "name": "Bamboo Stem brushtip texture",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:27",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "54c7c841b5-9e42-d6b3-6f8e-26ff9d6438",
+        "name": "Bamboo Stem brushtip texture 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:28",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "a2caa39eed-1148-9980-0e74-5e082ac5f6",
+        "name": "Bamboo Stem area texture",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:29",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "2dec2aa3fd-384e-0592-eb37-89595a8233",
+        "name": "Bamboo Shoot untextured",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:29",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "8b56cd43a8-8048-4087-f3ec-276a74dff9",
+        "name": "Bamboo Shoot 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:30",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "5f3f2483d1-b549-469e-9841-5673d049e1",
+        "name": "Stem perspective untextured",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:31",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "4bd22a4495-d445-7097-85cc-b3c745d226",
+        "name": "Stem perspective area texture",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:31",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "b9c15fbbbf-494c-ec87-b74c-03a52136b4",
+        "name": "Bamboo Branch 0 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:32",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "a115b8f7cb-c740-0f9a-949a-958eec7803",
+        "name": "Bamboo Branch 1 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:33",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "e1b6991663-e94b-1291-afad-ba955d3298",
+        "name": "Bamboo Branch 2 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:34",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "1a9c4c78b4-d441-18a6-6fce-707609f572",
+        "name": "Bamboo Branch 3 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:34",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "c042d2bd77-b24a-caa3-e701-e55d730652",
+        "name": "Bamboo Branch 4 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:35",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "ff1196319d-d14e-039e-3749-561944539e",
+        "name": "Bamboo Branch 5 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:35",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "b49b3151a8-f14f-b6b1-3e22-80dad04778",
+        "name": "Bamboo Branch 6 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:36",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "acc95aac98-1644-a2a6-666f-ddac31b5bd",
+        "name": "Bamboo Branch 7 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:37",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "0c47d5da1b-9143-0aaf-0f49-8ed90c0274",
+        "name": "Bamboo Branch 8 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:38",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "2e942923f9-0643-6d91-a6a3-1e926cffd7",
+        "name": "Bamboo Branch 9 (textured)",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:38",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "a0fdfbada8-5947-7592-ffec-e939ba859c",
+        "name": "Bamboo Leaf Spray",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:39",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "9b2100f26e-b84d-d6a3-3a38-74b93d1678",
+        "name": "Bamboo Single Leaf Brush smooth",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:39",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "d21f437419-7d41-1eb4-d841-5616d29b22",
+        "name": "Bamboo Single Leaf Brush rough",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:40",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "9fb38d2056-b346-2593-c428-05fb7f8d35",
+        "name": "Bamboo Single Leaf Brush wavy",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 13:37:41",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/30/38/2aac4e08ea-704d-068c-cb6a-5082a9acb9"
+      },
+      {
+        "uuid": "55cd746977-9846-dd83-dfc0-87f7992a85",
+        "name": "光std",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:46",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "2d33f6b5a6-244f-7a8a-ff37-1d4a390793",
+        "name": "光std 散布",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:47",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "acdf1f2600-f842-c791-8723-a0004fee82",
+        "name": "光std 流線",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:47",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "93c92d1734-7545-61a9-8276-3afc34e3b0",
+        "name": "光std 放射1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:48",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "cf2a4def6c-4847-a89b-f6ed-0bea6aa9b5",
+        "name": "光std 放射2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:48",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "6075a11b0b-854e-7dbf-3754-991609ed08",
+        "name": "光std 逆光",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:49",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "565cd21266-254c-6d84-0bb9-4b3a8cfebf",
+        "name": "光std spark1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:49",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "24fc86e4be-494b-18a8-46fd-0c3275649d",
+        "name": "光std spark2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:45:50",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/08/23/718e71ad16-6141-a39a-967e-f85fab3620"
+      },
+      {
+        "uuid": "3c971e21be-cc48-3396-963f-240ee67bc6",
+        "name": "おはなちゃん",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:56",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/06/72/ddeec64f4e-8248-9ba1-0c7c-33444ec5cc"
+      },
+      {
+        "uuid": "77dff9065b-7046-2d93-b698-e4514eee9c",
+        "name": "きらちゃん",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:57",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/06/72/ddeec64f4e-8248-9ba1-0c7c-33444ec5cc"
+      },
+      {
+        "uuid": "0992e1638a-884c-79b3-f63f-31872b8909",
+        "name": "はーとちゃん",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:46:57",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/06/72/ddeec64f4e-8248-9ba1-0c7c-33444ec5cc"
+      },
+      {
+        "uuid": "de9420cbe5-3148-a6b8-6cc7-b3ab5d233c",
+        "name": "woodgrain brush ・木目ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 17:40:36",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/83/46/870bf1131d-664b-77a0-084e-17f95346d6"
+      },
+      {
+        "uuid": "3d46ba864d-3443-4dac-cdc8-a7fe5cb8bb",
+        "name": "木目ブラシ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/12 17:41:00",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/77/89/c2e5e4b9ff-8049-f0ae-05b0-f59798efc4"
+      },
+      {
+        "uuid": "5f364a325d-b148-a4a3-324a-ee5138eb16",
+        "name": "mottled smoke dust spray 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:54",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "076337d4f3-cf4a-2db9-de36-eb2c7993f7",
+        "name": "mottled smoke dust spray",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:55",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "2472b3cc74-e144-d8bd-d890-0a988b8dd5",
+        "name": "smoke dust 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:55",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "24d8eae511-2144-c788-bcd2-2d1558b96a",
+        "name": "smoke dust",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:56",
+        "category": "Other",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      }
+    ],
+    "Pen": [
+      {
+        "uuid": "5b2375808a-7744-f79b-22ba-f37595b36d",
+        "name": "プリズムペン 1",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:33",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "3e014c6ef4-024e-3db9-a3ff-a4ae52bc76",
+        "name": "プリズムペン 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:34",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "df6e74b3d1-aa40-0b81-4422-173dd7d9a3",
+        "name": "プリズムペン 3",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:34",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "889327e32d-f44e-278c-0557-2732743f4b",
+        "name": "プリズムペン 4",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:35",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "87f2003364-0b42-b182-827a-122404c915",
+        "name": "プリズムペン 5",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:35",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "9f6db13619-9946-a4af-cf66-38d8aaade1",
+        "name": "プリズムペン 6",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:44:36",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/05/09/cb6021577c-764b-4298-afa5-37e3e0e054"
+      },
+      {
+        "uuid": "f7d55cf8f8-b84a-2784-1f25-6693aaf88a",
+        "name": "Pencil Dots Noise",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:15",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      },
+      {
+        "uuid": "2f64a8df11-8045-09ba-0bbf-57db2e9388",
+        "name": "ハッチペン/ラインA",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:55",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "9e209b5492-8d44-7d81-cbbd-9ed1e2783f",
+        "name": "ハッチペン/ラインB",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:56",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "0c650a3041-274e-519f-2948-d65e5c121f",
+        "name": "ハッチペン/スタンプ",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:56",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "3c3cdef702-2842-1095-e5bf-91fa97c1aa",
+        "name": "ハッチペン/トーン",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:57",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "b8febe314b-e147-119f-8876-2ee160a479",
+        "name": "粗いハッチペンシル/細",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:58",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "1a94fc3e88-c346-05a7-ca86-0cc0e0eaa7",
+        "name": "粗いハッチペンシル/太",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:45:58",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/48/27/3ce19c991e-3745-b98d-c937-ebb553b466"
+      },
+      {
+        "uuid": "7dc1d4809a-3d44-80a8-511a-ad93b521ca",
+        "name": "mottled smoke dust pen",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:56",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "cb0f7ea21c-7946-4d9c-a3e2-959c9ab438",
+        "name": "smoke dust pen 3",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:57",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "b7871ffc9e-2046-3d9c-ba72-7ba1513d22",
+        "name": "smoke dust pen 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:57",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      },
+      {
+        "uuid": "e493215587-9148-cc97-e3b0-e2ec0ef19c",
+        "name": "smoke dust pen",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/08/13 19:31:58",
+        "category": "Pen",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/12/37/d726050b83-3d4e-a79a-dce8-216c2d5efd"
+      }
+    ],
+    "Wind/Nature": [
+      {
+        "uuid": "91e1ed15c5-9742-b480-58bf-fec581d22c",
+        "name": "風（大・あっさり） 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:17",
+        "category": "Wind/Nature",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/00/18/3ffa8206fc-c744-0580-f1cc-4182345d1b"
+      },
+      {
+        "uuid": "fa01672f91-894d-999a-84c8-398ad84100",
+        "name": "風（大・濃いめ） 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:17",
+        "category": "Wind/Nature",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/00/18/3ffa8206fc-c744-0580-f1cc-4182345d1b"
+      },
+      {
+        "uuid": "d432e28ce2-bf4c-6d9d-829a-84a1b095c0",
+        "name": "風（大・白多め） 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:18",
+        "category": "Wind/Nature",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/00/18/3ffa8206fc-c744-0580-f1cc-4182345d1b"
+      },
+      {
+        "uuid": "4e563b61c1-1142-1980-45c7-4046e16c61",
+        "name": "風（小） 2",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/25 17:47:19",
+        "category": "Wind/Nature",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/00/18/3ffa8206fc-c744-0580-f1cc-4182345d1b"
+      }
+    ],
+    "Watercolor": [
+      {
+        "uuid": "80879f4792-9743-e596-dee9-bf78f83cd0",
+        "name": "ぐりぐり水彩ぼかし",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/31 16:53:37",
+        "category": "Watercolor",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/26/18/e0faa4d709-0442-22aa-8647-9fbebfdaca"
+      },
+      {
+        "uuid": "3863091feb-4f4f-b491-2d07-8e6d0e3844",
+        "name": "Water Stained Noise - Monochrome",
+        "type": "brush",
+        "thumbnail_path": null,
+        "created_date": "2025/07/29 16:50:11",
+        "category": "Watercolor",
+        "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/91/12/54c965b813-0a42-b08f-021f-5381873bd8"
+      }
+    ]
+  },
+  "recent_brushes": [
+    {
+      "uuid": "a813f076e8-0144-9d93-bf60-1966a08a02",
+      "name": "楽ちん体液ブラシ",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/31 18:25:12",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/59/33/f065ea576d-5140-469b-6e24-827bab7e89"
+    },
+    {
+      "uuid": "68ec373b9b-ff48-23aa-ce29-53a5af1539",
+      "name": "煙 3",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/08/13 19:28:13",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+    },
+    {
+      "uuid": "748e341649-7346-f7a4-12b8-35ad8df0cb",
+      "name": "煙 2",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/08/13 19:28:14",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+    },
+    {
+      "uuid": "674b866bc0-7b4a-e3a3-aec3-8621728d85",
+      "name": "煙",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/08/13 19:28:14",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/68/42/f598507fe3-da4d-bc97-ad8f-0dd6ac8ee4"
+    },
+    {
+      "uuid": "9e33dd4832-c240-23ab-6a5d-9549056962",
+      "name": "魔導書",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:21",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    },
+    {
+      "uuid": "c207d8e396-074e-71b3-9bbe-3ea386af4b",
+      "name": "魔導書 本のみ",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:21",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    },
+    {
+      "uuid": "3be1bac881-d941-26ac-dd36-8abe233dad",
+      "name": "魔導書斜め",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:22",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    },
+    {
+      "uuid": "749435357d-ba42-5da0-afa8-7ba117659a",
+      "name": "魔導書バラ",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:22",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    },
+    {
+      "uuid": "58f66ca35d-9f47-f6b8-dcde-3476b7fce4",
+      "name": "魔導書 縦積み",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:23",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    },
+    {
+      "uuid": "cc16f8f3d2-bb4e-0e99-71a1-c211452783",
+      "name": "魔導書 背表紙のみ 2",
+      "type": "brush",
+      "thumbnail_path": null,
+      "created_date": "2025/07/25 17:42:23",
+      "category": "Other",
+      "base_path": "/Users/dev2/Library/CELSYS/CLIPStudioCommon/Material/58/59/fa0f9d6f0b-ad4a-eda8-5ed4-52c189946f"
+    }
+  ]
+}

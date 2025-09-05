@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.tourboxkiller.app-merged_res-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.tourboxkiller.app-main-57:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.tourboxkiller.app-merged_res-56:/xml_network_security_config.xml.flat",
+        "source": "com.tourboxkiller.app-main-57:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.tourboxkiller.app-merged_res-56:/xml_backup_rules.xml.flat",
+        "source": "com.tourboxkiller.app-main-57:/xml/backup_rules.xml"
+    }
+]

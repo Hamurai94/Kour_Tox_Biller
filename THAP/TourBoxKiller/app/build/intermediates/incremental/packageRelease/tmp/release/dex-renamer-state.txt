@@ -1,0 +1,7 @@
+#Fri Sep 05 14:04:01 EDT 2025
+base.0=/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/dev2/Desktop/ArtRemoteControl/THAP/TourBoxKiller/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

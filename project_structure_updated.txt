@@ -1,0 +1,77 @@
+ArtRemoteControl/
+├── AndroidApp/                          # Android Studio Project (Same for all platforms)
+│   ├── app/
+│   │   ├── src/main/
+│   │   │   ├── java/com/artremote/
+│   │   │   │   ├── MainActivity.kt      # Main activity
+│   │   │   │   ├── WebSocketClient.kt   # Network communication
+│   │   │   │   └── ui/
+│   │   │   │       ├── screens/
+│   │   │   │       │   └── RemoteControlScreen.kt  # TourBox-inspired UI
+│   │   │   │       └── theme/
+│   │   │   │           ├── Theme.kt     # Material Design 3 theme
+│   │   │   │           └── Type.kt      # Typography
+│   │   │   ├── res/
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── strings.xml      # String resources
+│   │   │   │   │   ├── colors.xml       # Color palette
+│   │   │   │   │   └── themes.xml       # Theme definitions
+│   │   │   │   └── layout/              # XML layouts (if needed)
+│   │   │   └── AndroidManifest.xml      # App permissions & config
+│   │   └── build.gradle                 # App dependencies
+│   └── build.gradle                     # Project build config
+│
+├── PCCompanion/                         # Cross-Platform Python Server
+│   ├── art_remote_server_cross_platform.py    # 🆕 Cross-platform server (Windows + macOS)
+│   ├── art_remote_server.py            # Original Windows-only server
+│   ├── requirements_cross_platform.txt # 🆕 Cross-platform dependencies
+│   └── requirements.txt                # Original Windows dependencies
+│
+├── 📱 Android App Files (Universal)
+├── 🖥️ Cross-Platform Server Files
+├── 📚 Documentation
+│   ├── README.md                       # Main documentation (updated for cross-platform)
+│   ├── SETUP_GUIDE.md                  # General setup instructions
+│   ├── MACOS_SETUP.md                  # 🆕 macOS-specific setup guide
+│   ├── PROJECT_OVERVIEW.md             # Project details
+│   └── project_structure_updated.txt   # This file
+│
+├── 🚀 Launcher Scripts
+│   ├── start_server.py                 # 🆕 Universal launcher (auto-detects platform)
+│   ├── quick_start_mac.sh              # 🆕 macOS one-click setup
+│   ├── quick_start_windows.bat         # 🆕 Windows one-click setup  
+│   └── quick_start.bat                 # Original Windows launcher
+│
+└── 📋 Project Files
+    ├── project_structure.txt           # Original structure
+    └── project_structure_updated.txt   # Updated structure
+
+🆕 NEW CROSS-PLATFORM FEATURES:
+✅ Windows & macOS Support
+✅ Platform-specific keyboard shortcuts (Ctrl vs Cmd)
+✅ Native app detection for both platforms
+✅ Cross-platform GUI with platform indicators
+✅ Automatic dependency management per platform
+✅ Universal launcher with auto-detection
+✅ Platform-specific setup scripts
+✅ macOS accessibility permissions handling
+✅ PyObjC integration for native macOS features
+✅ Comprehensive documentation for both platforms
+
+🎯 PLATFORM DIFFERENCES HANDLED:
+• Windows: Uses Ctrl key, win32gui for window detection, pywin32 for system integration
+• macOS: Uses Cmd key, AppKit/Cocoa for app detection, requires accessibility permissions
+• Shortcuts: Automatically maps Windows Ctrl shortcuts to macOS Cmd shortcuts
+• Process Detection: Different methods for each platform's process management
+• GUI: Shows current platform in title bar and status
+
+🚀 USAGE:
+1. Windows: Run quick_start_windows.bat OR python3 start_server.py
+2. macOS: Run ./quick_start_mac.sh OR python3 start_server.py
+3. Universal: python3 start_server.py (auto-detects and runs appropriate setup)
+
+📱 ANDROID APP:
+• Same app works with both Windows and macOS servers
+• No platform-specific changes needed
+• Just enter the IP address of your Windows PC or Mac
+• All TourBox-inspired controls work identically on both platforms

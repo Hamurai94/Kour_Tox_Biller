@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tourboxkiller.app-mergeReleaseResources-54:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/dev2/.gradle/caches/transforms-3/9a8037afaf6e194ba78884d1ab51cb45/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

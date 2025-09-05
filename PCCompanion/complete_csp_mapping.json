@@ -1,0 +1,98 @@
+{
+  "F1": {
+    "assigned": true,
+    "icon": "❓",
+    "description": "Help/Tutorial",
+    "command": "helponlinehowto",
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F2": {
+    "assigned": true,
+    "icon": "✂️",
+    "description": "Cut",
+    "command": "cut",
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F3": {
+    "assigned": true,
+    "icon": "📋",
+    "description": "Copy",
+    "command": "copy",
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F4": {
+    "assigned": true,
+    "icon": "📥",
+    "description": "Paste",
+    "command": "paste",
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F5": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F5",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F6": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F6",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F7": {
+    "assigned": true,
+    "icon": "🔄",
+    "description": "Invert Selection",
+    "command": "selectinvert",
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F8": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F8",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F9": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F9",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F10": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F10",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F11": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F11",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  },
+  "F12": {
+    "assigned": false,
+    "icon": "➕",
+    "description": "Available F12",
+    "command": null,
+    "brush_uuid": null,
+    "thumbnail_path": null
+  }
+}
