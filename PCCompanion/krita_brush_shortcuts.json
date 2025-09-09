@@ -1,0 +1,98 @@
+{
+  "F1": {
+    "brush_name": "Basic circle",
+    "display_name": "Basic circle",
+    "filename": "Basic_circle.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Paint",
+    "shortcut_key": "f1"
+  },
+  "F2": {
+    "brush_name": "Basic mix",
+    "display_name": "Basic mix",
+    "filename": "Basic_mix.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f2"
+  },
+  "F3": {
+    "brush_name": "Basic mix soft",
+    "display_name": "Basic mix soft",
+    "filename": "Basic_mix_soft.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f3"
+  },
+  "F4": {
+    "brush_name": "Basic tip default",
+    "display_name": "Basic tip default",
+    "filename": "Basic_tip_default.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f4"
+  },
+  "F5": {
+    "brush_name": "Basic tip gaussian",
+    "display_name": "Basic tip gaussian",
+    "filename": "Basic_tip_gaussian.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f5"
+  },
+  "F6": {
+    "brush_name": "Basic tip soft",
+    "display_name": "Basic tip soft",
+    "filename": "Basic_tip_soft.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f6"
+  },
+  "F7": {
+    "brush_name": "Basic wet",
+    "display_name": "Basic wet",
+    "filename": "Basic_wet.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f7"
+  },
+  "F8": {
+    "brush_name": "Basic wet soft",
+    "display_name": "Basic wet soft",
+    "filename": "Basic_wet_soft.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f8"
+  },
+  "F9": {
+    "brush_name": "Block basic",
+    "display_name": "Block basic",
+    "filename": "Block_basic.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f9"
+  },
+  "F10": {
+    "brush_name": "Tangent normal basic",
+    "display_name": "Tangent normal basic",
+    "filename": "Tangent_normal_basic.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f10"
+  },
+  "F11": {
+    "brush_name": "b) Basic-1",
+    "display_name": "b) Basic-1",
+    "filename": "b)_Basic-1.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Ink",
+    "shortcut_key": "f11"
+  },
+  "F12": {
+    "brush_name": "b) Basic-2 Opacity",
+    "display_name": "b) Basic-2 Opacity",
+    "filename": "b)_Basic-2_Opacity.kpp",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "category": "Basic",
+    "shortcut_key": "f12"
+  }
+}

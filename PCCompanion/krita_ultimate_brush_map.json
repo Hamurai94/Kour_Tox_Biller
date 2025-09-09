@@ -1,0 +1,2486 @@
+{
+  "ctrl+a": {
+    "brush_name": "Basic circle",
+    "display_name": "Basic circle",
+    "filename": "Basic_circle.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+a",
+    "priority": 1
+  },
+  "ctrl+b": {
+    "brush_name": "Basic mix",
+    "display_name": "Basic mix",
+    "filename": "Basic_mix.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+b",
+    "priority": 2
+  },
+  "ctrl+d": {
+    "brush_name": "Basic mix soft",
+    "display_name": "Basic mix soft",
+    "filename": "Basic_mix_soft.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+d",
+    "priority": 3
+  },
+  "ctrl+e": {
+    "brush_name": "Basic tip default",
+    "display_name": "Basic tip default",
+    "filename": "Basic_tip_default.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+e",
+    "priority": 4
+  },
+  "ctrl+f": {
+    "brush_name": "Basic tip gaussian",
+    "display_name": "Basic tip gaussian",
+    "filename": "Basic_tip_gaussian.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f",
+    "priority": 5
+  },
+  "ctrl+g": {
+    "brush_name": "Basic tip soft",
+    "display_name": "Basic tip soft",
+    "filename": "Basic_tip_soft.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+g",
+    "priority": 6
+  },
+  "ctrl+h": {
+    "brush_name": "Basic wet",
+    "display_name": "Basic wet",
+    "filename": "Basic_wet.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+h",
+    "priority": 7
+  },
+  "ctrl+i": {
+    "brush_name": "Basic wet soft",
+    "display_name": "Basic wet soft",
+    "filename": "Basic_wet_soft.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+i",
+    "priority": 8
+  },
+  "ctrl+j": {
+    "brush_name": "Block basic",
+    "display_name": "Block basic",
+    "filename": "Block_basic.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+j",
+    "priority": 9
+  },
+  "ctrl+k": {
+    "brush_name": "Eraser circle",
+    "display_name": "Eraser circle",
+    "filename": "Eraser_circle.kpp",
+    "category": "Erasers",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+k",
+    "priority": 10
+  },
+  "ctrl+l": {
+    "brush_name": "Fill circle",
+    "display_name": "Fill circle",
+    "filename": "Fill_circle.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+l",
+    "priority": 11
+  },
+  "ctrl+m": {
+    "brush_name": "Ink circle 05",
+    "display_name": "Ink circle 05",
+    "filename": "Ink_circle_05.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "ctrl+m",
+    "priority": 12
+  },
+  "ctrl+p": {
+    "brush_name": "Ink circle 10",
+    "display_name": "Ink circle 10",
+    "filename": "Ink_circle_10.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "ctrl+p",
+    "priority": 13
+  },
+  "ctrl+q": {
+    "brush_name": "Layout circle soft",
+    "display_name": "Layout circle soft",
+    "filename": "Layout_circle_soft.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+q",
+    "priority": 14
+  },
+  "ctrl+r": {
+    "brush_name": "Quick circle big",
+    "display_name": "Quick circle big",
+    "filename": "Quick_circle_big.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+r",
+    "priority": 15
+  },
+  "ctrl+t": {
+    "brush_name": "Quick circle huge",
+    "display_name": "Quick circle huge",
+    "filename": "Quick_circle_huge.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+t",
+    "priority": 16
+  },
+  "ctrl+u": {
+    "brush_name": "Quick circle layout",
+    "display_name": "Quick circle layout",
+    "filename": "Quick_circle_layout.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+u",
+    "priority": 17
+  },
+  "ctrl+w": {
+    "brush_name": "Tangent normal basic",
+    "display_name": "Tangent normal basic",
+    "filename": "Tangent_normal_basic.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+w",
+    "priority": 18
+  },
+  "ctrl+x": {
+    "brush_name": "a) Eraser Circle",
+    "display_name": "a) Eraser Circle",
+    "filename": "a)_Eraser_Circle.kpp",
+    "category": "Ink",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+x",
+    "priority": 19
+  },
+  "ctrl+1": {
+    "brush_name": "a) Eraser Circle",
+    "display_name": "a) Eraser Circle",
+    "filename": "a)_Eraser_Circle.kpp",
+    "category": "Ink",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+1",
+    "priority": 20
+  },
+  "ctrl+2": {
+    "brush_name": "b) Basic-1",
+    "display_name": "b) Basic-1",
+    "filename": "b)_Basic-1.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+2",
+    "priority": 21
+  },
+  "ctrl+3": {
+    "brush_name": "b) Basic-2 Opacity",
+    "display_name": "b) Basic-2 Opacity",
+    "filename": "b)_Basic-2_Opacity.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+3",
+    "priority": 22
+  },
+  "ctrl+4": {
+    "brush_name": "b) Basic-3 Flow",
+    "display_name": "b) Basic-3 Flow",
+    "filename": "b)_Basic-3_Flow.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+4",
+    "priority": 23
+  },
+  "ctrl+5": {
+    "brush_name": "b) Basic-4 Flow Opacity",
+    "display_name": "b) Basic-4 Flow Opacity",
+    "filename": "b)_Basic-4_Flow_Opacity.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+5",
+    "priority": 24
+  },
+  "ctrl+6": {
+    "brush_name": "b) Basic-5 Size",
+    "display_name": "b) Basic-5 Size",
+    "filename": "b)_Basic-5_Size_default.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+6",
+    "priority": 25
+  },
+  "ctrl+7": {
+    "brush_name": "b) Basic-5 Size",
+    "display_name": "b) Basic-5 Size",
+    "filename": "b)_Basic-5_Size_default.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+7",
+    "priority": 26
+  },
+  "ctrl+8": {
+    "brush_name": "b) Basic-5 Size Opacity",
+    "display_name": "b) Basic-5 Size Opacity",
+    "filename": "b)_Basic-5_Size_Opacity.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+8",
+    "priority": 27
+  },
+  "ctrl+9": {
+    "brush_name": "b) Basic-6 Details",
+    "display_name": "b) Basic-6 Details",
+    "filename": "b)_Basic-6_Details.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+9",
+    "priority": 28
+  },
+  "ctrl+0": {
+    "brush_name": "i) Wet Circle",
+    "display_name": "i) Wet Circle",
+    "filename": "i)_Wet_Circle.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+0",
+    "priority": 29
+  },
+  "alt+a": {
+    "brush_name": "j) WaterC Basic Lines-Dry",
+    "display_name": "j) WaterC Basic Lines-Dry",
+    "filename": "j)_WaterC_Basic_Lines-Dry.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+a",
+    "priority": 30
+  },
+  "alt+b": {
+    "brush_name": "j) WaterC Basic Lines-Wet",
+    "display_name": "j) WaterC Basic Lines-Wet",
+    "filename": "j)_WaterC_Basic_Lines-Wet.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+b",
+    "priority": 31
+  },
+  "alt+c": {
+    "brush_name": "j) WaterC Basic Lines-Wet-Pattern",
+    "display_name": "j) WaterC Basic Lines-Wet-Pattern",
+    "filename": "j)_WaterC_Basic_Lines-Wet-Pattern.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+c",
+    "priority": 32
+  },
+  "alt+d": {
+    "brush_name": "j) WaterC Basic Round-Fringe 02",
+    "display_name": "j) WaterC Basic Round-Fringe 02",
+    "filename": "j)_WaterC_Basic_Round-Fringe_02.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+d",
+    "priority": 33
+  },
+  "alt+e": {
+    "brush_name": "j) WaterC Basic Round-Grain",
+    "display_name": "j) WaterC Basic Round-Grain",
+    "filename": "j)_WaterC_Basic_Round-Grain.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+e",
+    "priority": 34
+  },
+  "alt+f": {
+    "brush_name": "j) WaterC Basic Round-Grunge",
+    "display_name": "j) WaterC Basic Round-Grunge",
+    "filename": "j)_WaterC_Basic_Round-Grunge.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "alt+f",
+    "priority": 35
+  },
+  "alt+g": {
+    "brush_name": "k) Blender Basic",
+    "display_name": "k) Blender Basic",
+    "filename": "k)_Blender_Basic.kpp",
+    "category": "Basic",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+g",
+    "priority": 36
+  },
+  "alt+h": {
+    "brush_name": "l) Adjust Multiply",
+    "display_name": "l) Adjust Multiply",
+    "filename": "l)_Adjust_Multiply.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+h",
+    "priority": 37
+  },
+  "alt+i": {
+    "brush_name": "Curve ink",
+    "display_name": "Curve ink",
+    "filename": "Curve_ink.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+i",
+    "priority": 38
+  },
+  "alt+j": {
+    "brush_name": "Ink ballpen",
+    "display_name": "Ink ballpen",
+    "filename": "Ink_ballpen.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+j",
+    "priority": 39
+  },
+  "alt+k": {
+    "brush_name": "Ink brush 25",
+    "display_name": "Ink brush 25",
+    "filename": "Ink_brush_25.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+k",
+    "priority": 40
+  },
+  "alt+l": {
+    "brush_name": "Ink gpen 10",
+    "display_name": "Ink gpen 10",
+    "filename": "Ink_gpen_10.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+l",
+    "priority": 41
+  },
+  "alt+m": {
+    "brush_name": "Ink gpen 25",
+    "display_name": "Ink gpen 25",
+    "filename": "Ink_gpen_25.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+m",
+    "priority": 42
+  },
+  "alt+n": {
+    "brush_name": "Ink tilt 10",
+    "display_name": "Ink tilt 10",
+    "filename": "Ink_tilt_10.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+n",
+    "priority": 43
+  },
+  "alt+o": {
+    "brush_name": "Ink tilt 20",
+    "display_name": "Ink tilt 20",
+    "filename": "Ink_tilt_20.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+o",
+    "priority": 44
+  },
+  "alt+p": {
+    "brush_name": "Layout pen",
+    "display_name": "Layout pen",
+    "filename": "Layout_pen.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+p",
+    "priority": 45
+  },
+  "alt+q": {
+    "brush_name": "Pencil 2B",
+    "display_name": "Pencil 2B",
+    "filename": "Pencil_2B.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+q",
+    "priority": 46
+  },
+  "alt+r": {
+    "brush_name": "Pencil HB",
+    "display_name": "Pencil HB",
+    "filename": "Pencil_HB.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+r",
+    "priority": 47
+  },
+  "alt+s": {
+    "brush_name": "Pencil texture",
+    "display_name": "Pencil texture",
+    "filename": "Pencil_texture.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+s",
+    "priority": 48
+  },
+  "alt+t": {
+    "brush_name": "Pencil tilt",
+    "display_name": "Pencil tilt",
+    "filename": "Pencil_tilt.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+t",
+    "priority": 49
+  },
+  "alt+u": {
+    "brush_name": "Sketch ink big",
+    "display_name": "Sketch ink big",
+    "filename": "Sketch_ink_big.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+u",
+    "priority": 50
+  },
+  "alt+v": {
+    "brush_name": "Sketch ink small",
+    "display_name": "Sketch ink small",
+    "filename": "Sketch_ink_small.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+v",
+    "priority": 51
+  },
+  "alt+w": {
+    "brush_name": "c) Pencil 1 Sketch (mypaint)",
+    "display_name": "c) Pencil 1 Sketch (mypaint)",
+    "filename": "c)_Pencil_1_Sketch_(mypaint).myb",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+w",
+    "priority": 52
+  },
+  "alt+x": {
+    "brush_name": "c) Pencil 2b (mypaint)",
+    "display_name": "c) Pencil 2b (mypaint)",
+    "filename": "c)_Pencil_2b_(mypaint).myb",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+x",
+    "priority": 53
+  },
+  "alt+y": {
+    "brush_name": "c) Pencil-1 Hard",
+    "display_name": "c) Pencil-1 Hard",
+    "filename": "c)_Pencil-1_Hard.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+y",
+    "priority": 54
+  },
+  "alt+z": {
+    "brush_name": "c) Pencil-2",
+    "display_name": "c) Pencil-2",
+    "filename": "c)_Pencil-2.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+z",
+    "priority": 55
+  },
+  "alt+1": {
+    "brush_name": "c) Pencil-3 Large 4B",
+    "display_name": "c) Pencil-3 Large 4B",
+    "filename": "c)_Pencil-3_Large_4B.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+1",
+    "priority": 56
+  },
+  "alt+2": {
+    "brush_name": "c) Pencil-4 Soft",
+    "display_name": "c) Pencil-4 Soft",
+    "filename": "c)_Pencil-4_Soft.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+2",
+    "priority": 57
+  },
+  "alt+3": {
+    "brush_name": "c) Pencil-5 Tilted",
+    "display_name": "c) Pencil-5 Tilted",
+    "filename": "c)_Pencil-5_Tilted.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+3",
+    "priority": 58
+  },
+  "alt+4": {
+    "brush_name": "c) Pencil-6 Quick Shade",
+    "display_name": "c) Pencil-6 Quick Shade",
+    "filename": "c)_Pencil-6_Quick_Shade.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "alt+4",
+    "priority": 59
+  },
+  "alt+5": {
+    "brush_name": "d) Ink pen (mypaint)",
+    "display_name": "d) Ink pen (mypaint)",
+    "filename": "d)_Ink_pen_(mypaint).myb",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+5",
+    "priority": 60
+  },
+  "alt+6": {
+    "brush_name": "d) Ink-1 Precision",
+    "display_name": "d) Ink-1 Precision",
+    "filename": "d)_Ink-1_Precision.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+6",
+    "priority": 61
+  },
+  "alt+7": {
+    "brush_name": "d) Ink-2 Fineliner",
+    "display_name": "d) Ink-2 Fineliner",
+    "filename": "d)_Ink-2_Fineliner.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+7",
+    "priority": 62
+  },
+  "alt+8": {
+    "brush_name": "d) Ink-3 Gpen",
+    "display_name": "d) Ink-3 Gpen",
+    "filename": "d)_Ink-3_Gpen.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+8",
+    "priority": 63
+  },
+  "alt+9": {
+    "brush_name": "d) Ink-4 Pen Rough",
+    "display_name": "d) Ink-4 Pen Rough",
+    "filename": "d)_Ink-4_Pen_Rough.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+9",
+    "priority": 64
+  },
+  "alt+0": {
+    "brush_name": "d) Ink-7 Brush Rough",
+    "display_name": "d) Ink-7 Brush Rough",
+    "filename": "d)_Ink-7_Brush_Rough.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "alt+0",
+    "priority": 65
+  },
+  "shift+a": {
+    "brush_name": "d) Ink-8 Sumi-e",
+    "display_name": "d) Ink-8 Sumi-e",
+    "filename": "d)_Ink-8_Sumi-e.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "shift+a",
+    "priority": 66
+  },
+  "shift+b": {
+    "brush_name": "h) Charcoal Pencil Medium",
+    "display_name": "h) Charcoal Pencil Medium",
+    "filename": "h)_Charcoal_Pencil_Medium.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "shift+b",
+    "priority": 67
+  },
+  "shift+c": {
+    "brush_name": "h) Charcoal Pencil Thin",
+    "display_name": "h) Charcoal Pencil Thin",
+    "filename": "h)_Charcoal_Pencil_Thin.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "shift+c",
+    "priority": 68
+  },
+  "shift+d": {
+    "brush_name": "h) Charcoal pencil large",
+    "display_name": "h) Charcoal pencil large",
+    "filename": "h)_Charcoal_pencil_large.kpp",
+    "category": "Pencils",
+    "icon": "\u270f\ufe0f",
+    "shortcut": "shift+d",
+    "priority": 69
+  },
+  "shift+e": {
+    "brush_name": "ink precision 03",
+    "display_name": "ink precision 03",
+    "filename": "ink_precision_03.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "shift+e",
+    "priority": 70
+  },
+  "shift+f": {
+    "brush_name": "v) Distort Shrink",
+    "display_name": "v) Distort Shrink",
+    "filename": "v)_Distort_Shrink.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8a\ufe0f",
+    "shortcut": "shift+f",
+    "priority": 71
+  },
+  "shift+g": {
+    "brush_name": "x) Filter Sharpen",
+    "display_name": "x) Filter Sharpen",
+    "filename": "x)_Filter_Sharpen.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+g",
+    "priority": 72
+  },
+  "shift+h": {
+    "brush_name": "Oils bristle",
+    "display_name": "Oils bristle",
+    "filename": "Oils_bristle.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+h",
+    "priority": 73
+  },
+  "shift+i": {
+    "brush_name": "Oils knife",
+    "display_name": "Oils knife",
+    "filename": "Oils_knife.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+i",
+    "priority": 74
+  },
+  "shift+j": {
+    "brush_name": "Sketch speedpaint",
+    "display_name": "Sketch speedpaint",
+    "filename": "Sketch_speedpaint.kpp",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+j",
+    "priority": 75
+  },
+  "shift+k": {
+    "brush_name": "Sketch speedpaint shade",
+    "display_name": "Sketch speedpaint shade",
+    "filename": "Sketch_speedpaint_shade.kpp",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+k",
+    "priority": 76
+  },
+  "shift+l": {
+    "brush_name": "Smudge water",
+    "display_name": "Smudge water",
+    "filename": "Smudge_water.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+l",
+    "priority": 77
+  },
+  "shift+m": {
+    "brush_name": "e) Marker Medium (mypaint)",
+    "display_name": "e) Marker Medium (mypaint)",
+    "filename": "e)_Marker_Medium_(mypaint).myb",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+m",
+    "priority": 78
+  },
+  "shift+n": {
+    "brush_name": "e) Marker Plain (mypaint)",
+    "display_name": "e) Marker Plain (mypaint)",
+    "filename": "e)_Marker_Plain_(mypaint).myb",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+n",
+    "priority": 79
+  },
+  "shift+o": {
+    "brush_name": "i) Wet Knife Plus (mypaint)",
+    "display_name": "i) Wet Knife Plus (mypaint)",
+    "filename": "i)_Wet_Knife_Plus_(mypaint).myb",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+o",
+    "priority": 80
+  },
+  "shift+p": {
+    "brush_name": "i) Wet Paint",
+    "display_name": "i) Wet Paint",
+    "filename": "i)_Wet_Paint.kpp",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+p",
+    "priority": 81
+  },
+  "shift+q": {
+    "brush_name": "i) Wet Paint Details",
+    "display_name": "i) Wet Paint Details",
+    "filename": "i)_Wet_Paint_Details.kpp",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+q",
+    "priority": 82
+  },
+  "shift+r": {
+    "brush_name": "i) Wet Paint Plus (mypaint)",
+    "display_name": "i) Wet Paint Plus (mypaint)",
+    "filename": "i)_Wet_Paint_Plus_(mypaint).myb",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+r",
+    "priority": 83
+  },
+  "shift+s": {
+    "brush_name": "j) WaterC Flat Big-Grain Tilt",
+    "display_name": "j) WaterC Flat Big-Grain Tilt",
+    "filename": "j)_WaterC_Flat_Big-Grain_Tilt.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+s",
+    "priority": 84
+  },
+  "shift+t": {
+    "brush_name": "j) WaterC Flat Decay Tilt",
+    "display_name": "j) WaterC Flat Decay Tilt",
+    "filename": "j)_WaterC_Flat_Decay_Tilt.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+t",
+    "priority": 85
+  },
+  "shift+u": {
+    "brush_name": "j) WaterC Special Blobs",
+    "display_name": "j) WaterC Special Blobs",
+    "filename": "j)_WaterC_Special_Blobs.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+u",
+    "priority": 86
+  },
+  "shift+v": {
+    "brush_name": "j) WaterC Special Splats",
+    "display_name": "j) WaterC Special Splats",
+    "filename": "j)_WaterC_Special_Splats.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+v",
+    "priority": 87
+  },
+  "shift+w": {
+    "brush_name": "j) WaterC Spread",
+    "display_name": "j) WaterC Spread",
+    "filename": "j)_WaterC_Spread.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+w",
+    "priority": 88
+  },
+  "shift+x": {
+    "brush_name": "j) WaterC Spread WideArea",
+    "display_name": "j) WaterC Spread WideArea",
+    "filename": "j)_WaterC_Spread_WideArea.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+x",
+    "priority": 89
+  },
+  "shift+y": {
+    "brush_name": "j) WaterC Spread-Pattern",
+    "display_name": "j) WaterC Spread-Pattern",
+    "filename": "j)_WaterC_Spread-Pattern.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+y",
+    "priority": 90
+  },
+  "shift+z": {
+    "brush_name": "j) WaterC Water-Pattern",
+    "display_name": "j) WaterC Water-Pattern",
+    "filename": "j)_WaterC_Water-Pattern.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+z",
+    "priority": 91
+  },
+  "shift+1": {
+    "brush_name": "j) Watercolor Fringe",
+    "display_name": "j) Watercolor Fringe",
+    "filename": "j)_Watercolor_Fringe.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+1",
+    "priority": 92
+  },
+  "shift+2": {
+    "brush_name": "j) Watercolor Texture",
+    "display_name": "j) Watercolor Texture",
+    "filename": "j)_Watercolor_Texture.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+2",
+    "priority": 93
+  },
+  "shift+3": {
+    "brush_name": "j) Waterpaint Hard Edges",
+    "display_name": "j) Waterpaint Hard Edges",
+    "filename": "j)_Waterpaint_Hard_Edges.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+3",
+    "priority": 94
+  },
+  "shift+4": {
+    "brush_name": "j) Waterpaint Soft Edges",
+    "display_name": "j) Waterpaint Soft Edges",
+    "filename": "j)_Waterpaint_Soft_Edges.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+4",
+    "priority": 95
+  },
+  "shift+5": {
+    "brush_name": "m) RGBA 02 Thickpaint",
+    "display_name": "m) RGBA 02 Thickpaint",
+    "filename": "m)_RGBA_02_Thickpaint.kpp",
+    "category": "Paint",
+    "icon": "\ud83c\udfa8",
+    "shortcut": "shift+5",
+    "priority": 96
+  },
+  "shift+6": {
+    "brush_name": "z) Stamp Water",
+    "display_name": "z) Stamp Water",
+    "filename": "z)_Stamp_Water.kpp",
+    "category": "Watercolor",
+    "icon": "\ud83d\udca7",
+    "shortcut": "shift+6",
+    "priority": 97
+  },
+  "shift+7": {
+    "brush_name": "Airbrush eraser",
+    "display_name": "Airbrush eraser",
+    "filename": "Airbrush_eraser.kpp",
+    "category": "Airbrush",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "shift+7",
+    "priority": 98
+  },
+  "shift+8": {
+    "brush_name": "Airbrush linear",
+    "display_name": "Airbrush linear",
+    "filename": "Airbrush_linear.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udca8",
+    "shortcut": "shift+8",
+    "priority": 99
+  },
+  "shift+9": {
+    "brush_name": "Airbrush linear noisy",
+    "display_name": "Airbrush linear noisy",
+    "filename": "Airbrush_linear_noisy.kpp",
+    "category": "Airbrush",
+    "icon": "\ud83d\udca8",
+    "shortcut": "shift+9",
+    "priority": 100
+  },
+  "shift+0": {
+    "brush_name": "Airbrush pressure",
+    "display_name": "Airbrush pressure",
+    "filename": "Airbrush_pressure.kpp",
+    "category": "Airbrush",
+    "icon": "\ud83d\udca8",
+    "shortcut": "shift+0",
+    "priority": 101
+  },
+  "ctrl+alt+a": {
+    "brush_name": "Spray splat",
+    "display_name": "Spray splat",
+    "filename": "Spray_splat.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+a",
+    "priority": 102
+  },
+  "ctrl+alt+b": {
+    "brush_name": "b) Airbrush Soft",
+    "display_name": "b) Airbrush Soft",
+    "filename": "b)_Airbrush_Soft.kpp",
+    "category": "Airbrush",
+    "icon": "\ud83d\udca8",
+    "shortcut": "ctrl+alt+b",
+    "priority": 103
+  },
+  "ctrl+alt+c": {
+    "brush_name": "y) Texture Spray",
+    "display_name": "y) Texture Spray",
+    "filename": "y)_Texture_Spray.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+c",
+    "priority": 104
+  },
+  "ctrl+alt+d": {
+    "brush_name": "Eraser hard",
+    "display_name": "Eraser hard",
+    "filename": "Eraser_hard.kpp",
+    "category": "Ink",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+alt+d",
+    "priority": 105
+  },
+  "ctrl+alt+e": {
+    "brush_name": "Eraser soft",
+    "display_name": "Eraser soft",
+    "filename": "Eraser_soft.kpp",
+    "category": "Erasers",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+alt+e",
+    "priority": 106
+  },
+  "ctrl+alt+f": {
+    "brush_name": "Screentones eraser",
+    "display_name": "Screentones eraser",
+    "filename": "Screentones_eraser.kpp",
+    "category": "Erasers",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+alt+f",
+    "priority": 107
+  },
+  "ctrl+alt+g": {
+    "brush_name": "a) Eraser Small",
+    "display_name": "a) Eraser Small",
+    "filename": "a)_Eraser_Small.kpp",
+    "category": "Ink",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+alt+g",
+    "priority": 108
+  },
+  "ctrl+alt+h": {
+    "brush_name": "a) Eraser Soft",
+    "display_name": "a) Eraser Soft",
+    "filename": "a)_Eraser_Soft.kpp",
+    "category": "Erasers",
+    "icon": "\ud83e\uddfd",
+    "shortcut": "ctrl+alt+h",
+    "priority": 109
+  },
+  "ctrl+alt+i": {
+    "brush_name": "Blender Blur",
+    "display_name": "Blender Blur",
+    "filename": "Blender_Blur.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+i",
+    "priority": 110
+  },
+  "ctrl+alt+j": {
+    "brush_name": "Block bristles",
+    "display_name": "Block bristles",
+    "filename": "Block_bristles.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+j",
+    "priority": 111
+  },
+  "ctrl+alt+k": {
+    "brush_name": "Block fuzzy",
+    "display_name": "Block fuzzy",
+    "filename": "Block_fuzzy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+k",
+    "priority": 112
+  },
+  "ctrl+alt+l": {
+    "brush_name": "Block mix tilt",
+    "display_name": "Block mix tilt",
+    "filename": "Block_mix_tilt.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+l",
+    "priority": 113
+  },
+  "ctrl+alt+m": {
+    "brush_name": "Block textured 1",
+    "display_name": "Block textured 1",
+    "filename": "Block_textured_1.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+m",
+    "priority": 114
+  },
+  "ctrl+alt+n": {
+    "brush_name": "Block textured 2",
+    "display_name": "Block textured 2",
+    "filename": "Block_textured_2.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+n",
+    "priority": 115
+  },
+  "ctrl+alt+o": {
+    "brush_name": "Block tilt",
+    "display_name": "Block tilt",
+    "filename": "Block_tilt.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+o",
+    "priority": 116
+  },
+  "ctrl+alt+p": {
+    "brush_name": "Block wet tilt",
+    "display_name": "Block wet tilt",
+    "filename": "Block_wet_tilt.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+p",
+    "priority": 117
+  },
+  "ctrl+alt+q": {
+    "brush_name": "Bristle Details",
+    "display_name": "Bristle Details",
+    "filename": "Bristle_Details.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+q",
+    "priority": 118
+  },
+  "ctrl+alt+r": {
+    "brush_name": "Bristle Large",
+    "display_name": "Bristle Large",
+    "filename": "Bristle_Large.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+r",
+    "priority": 119
+  },
+  "ctrl+alt+s": {
+    "brush_name": "Bristle Special Blender",
+    "display_name": "Bristle Special Blender",
+    "filename": "Bristle_Special_Blender.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+s",
+    "priority": 120
+  },
+  "ctrl+alt+t": {
+    "brush_name": "Bristle Squared",
+    "display_name": "Bristle Squared",
+    "filename": "Bristle_Squared.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+t",
+    "priority": 121
+  },
+  "ctrl+alt+u": {
+    "brush_name": "Bristle Tapered",
+    "display_name": "Bristle Tapered",
+    "filename": "Bristle_Tapered.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+u",
+    "priority": 122
+  },
+  "ctrl+alt+v": {
+    "brush_name": "Bristle Texture",
+    "display_name": "Bristle Texture",
+    "filename": "Bristle_Texture.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+v",
+    "priority": 123
+  },
+  "ctrl+alt+w": {
+    "brush_name": "Bristle frottis",
+    "display_name": "Bristle frottis",
+    "filename": "Bristle_frottis.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+w",
+    "priority": 124
+  },
+  "ctrl+alt+x": {
+    "brush_name": "Bristles hairy",
+    "display_name": "Bristles hairy",
+    "filename": "Bristles_hairy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+x",
+    "priority": 125
+  },
+  "ctrl+alt+y": {
+    "brush_name": "Bristles mix",
+    "display_name": "Bristles mix",
+    "filename": "Bristles_mix.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+y",
+    "priority": 126
+  },
+  "ctrl+alt+z": {
+    "brush_name": "Bristles textured",
+    "display_name": "Bristles textured",
+    "filename": "Bristles_textured.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+z",
+    "priority": 127
+  },
+  "ctrl+alt+1": {
+    "brush_name": "Bristles wet",
+    "display_name": "Bristles wet",
+    "filename": "Bristles_wet.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+1",
+    "priority": 128
+  },
+  "ctrl+alt+2": {
+    "brush_name": "Brush dotted",
+    "display_name": "Brush dotted",
+    "filename": "Brush_dotted.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+2",
+    "priority": 129
+  },
+  "ctrl+alt+3": {
+    "brush_name": "Brush textured",
+    "display_name": "Brush textured",
+    "filename": "Brush_textured.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+3",
+    "priority": 130
+  },
+  "ctrl+alt+4": {
+    "brush_name": "Clone tool",
+    "display_name": "Clone tool",
+    "filename": "Clone_tool.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+4",
+    "priority": 131
+  },
+  "ctrl+alt+5": {
+    "brush_name": "Curve curvy",
+    "display_name": "Curve curvy",
+    "filename": "Curve_curvy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+5",
+    "priority": 132
+  },
+  "ctrl+alt+6": {
+    "brush_name": "Curve recurvy",
+    "display_name": "Curve recurvy",
+    "filename": "Curve_recurvy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+6",
+    "priority": 133
+  },
+  "ctrl+alt+7": {
+    "brush_name": "Curve smooth",
+    "display_name": "Curve smooth",
+    "filename": "Curve_smooth.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+7",
+    "priority": 134
+  },
+  "ctrl+alt+8": {
+    "brush_name": "FX blur light",
+    "display_name": "FX blur light",
+    "filename": "FX_blur_light.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+8",
+    "priority": 135
+  },
+  "ctrl+alt+9": {
+    "brush_name": "FX color HSY",
+    "display_name": "FX color HSY",
+    "filename": "FX_color_HSY.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+9",
+    "priority": 136
+  },
+  "ctrl+alt+0": {
+    "brush_name": "FX explode",
+    "display_name": "FX explode",
+    "filename": "FX_explode.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+alt+0",
+    "priority": 137
+  },
+  "ctrl+shift+a": {
+    "brush_name": "FX glow add",
+    "display_name": "FX glow add",
+    "filename": "FX_glow_add.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+a",
+    "priority": 138
+  },
+  "ctrl+shift+b": {
+    "brush_name": "FX overlay",
+    "display_name": "FX overlay",
+    "filename": "FX_overlay.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+b",
+    "priority": 139
+  },
+  "ctrl+shift+c": {
+    "brush_name": "FX splat starfield",
+    "display_name": "FX splat starfield",
+    "filename": "FX_splat_starfield.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+c",
+    "priority": 140
+  },
+  "ctrl+shift+d": {
+    "brush_name": "Fill block",
+    "display_name": "Fill block",
+    "filename": "Fill_block.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+d",
+    "priority": 141
+  },
+  "ctrl+shift+e": {
+    "brush_name": "Grid square 25",
+    "display_name": "Grid square 25",
+    "filename": "Grid_square_25.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+e",
+    "priority": 142
+  },
+  "ctrl+shift+f": {
+    "brush_name": "Hatch crispy",
+    "display_name": "Hatch crispy",
+    "filename": "Hatch_crispy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+f",
+    "priority": 143
+  },
+  "ctrl+shift+g": {
+    "brush_name": "Hatch cross regular",
+    "display_name": "Hatch cross regular",
+    "filename": "Hatch_cross_regular.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+g",
+    "priority": 144
+  },
+  "ctrl+shift+h": {
+    "brush_name": "Hatch cross small",
+    "display_name": "Hatch cross small",
+    "filename": "Hatch_cross_small.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+h",
+    "priority": 145
+  },
+  "ctrl+shift+i": {
+    "brush_name": "Hatch diag S",
+    "display_name": "Hatch diag S",
+    "filename": "Hatch_diag_S.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+i",
+    "priority": 146
+  },
+  "ctrl+shift+j": {
+    "brush_name": "Hatch diag fat",
+    "display_name": "Hatch diag fat",
+    "filename": "Hatch_diag_fat.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+j",
+    "priority": 147
+  },
+  "ctrl+shift+k": {
+    "brush_name": "Hatch moire",
+    "display_name": "Hatch moire",
+    "filename": "Hatch_moire.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+k",
+    "priority": 148
+  },
+  "ctrl+shift+l": {
+    "brush_name": "Hatch noisy",
+    "display_name": "Hatch noisy",
+    "filename": "Hatch_noisy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+l",
+    "priority": 149
+  },
+  "ctrl+shift+m": {
+    "brush_name": "Layout block",
+    "display_name": "Layout block",
+    "filename": "Layout_block.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+m",
+    "priority": 150
+  },
+  "ctrl+shift+n": {
+    "brush_name": "Layout oval",
+    "display_name": "Layout oval",
+    "filename": "Layout_oval.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+n",
+    "priority": 151
+  },
+  "ctrl+shift+o": {
+    "brush_name": "Move tool",
+    "display_name": "Move tool",
+    "filename": "Move_tool.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+o",
+    "priority": 152
+  },
+  "ctrl+shift+p": {
+    "brush_name": "Pastel texture large",
+    "display_name": "Pastel texture large",
+    "filename": "Pastel_texture_large.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+p",
+    "priority": 153
+  },
+  "ctrl+shift+q": {
+    "brush_name": "Pastel texture thin",
+    "display_name": "Pastel texture thin",
+    "filename": "Pastel_texture_thin.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+q",
+    "priority": 154
+  },
+  "ctrl+shift+r": {
+    "brush_name": "PixelArt Dithering",
+    "display_name": "PixelArt Dithering",
+    "filename": "Pixelart_dither.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+r",
+    "priority": 155
+  },
+  "ctrl+shift+s": {
+    "brush_name": "PixelArt Round",
+    "display_name": "PixelArt Round",
+    "filename": "Pixelart_round.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+s",
+    "priority": 156
+  },
+  "ctrl+shift+t": {
+    "brush_name": "PixelArt Square",
+    "display_name": "PixelArt Square",
+    "filename": "Pixelart_square.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+t",
+    "priority": 157
+  },
+  "ctrl+shift+u": {
+    "brush_name": "Rake bristle dry",
+    "display_name": "Rake bristle dry",
+    "filename": "Rake_bristle_dry.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+u",
+    "priority": 158
+  },
+  "ctrl+shift+v": {
+    "brush_name": "Rake texture",
+    "display_name": "Rake texture",
+    "filename": "Rake_texture.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+v",
+    "priority": 159
+  },
+  "ctrl+shift+w": {
+    "brush_name": "Screentones",
+    "display_name": "Screentones",
+    "filename": "Screentones.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+w",
+    "priority": 160
+  },
+  "ctrl+shift+x": {
+    "brush_name": "Shape fill",
+    "display_name": "Shape fill",
+    "filename": "Shape_fill.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+x",
+    "priority": 161
+  },
+  "ctrl+shift+y": {
+    "brush_name": "Shape smooth",
+    "display_name": "Shape smooth",
+    "filename": "Shape_smooth.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+y",
+    "priority": 162
+  },
+  "ctrl+shift+z": {
+    "brush_name": "Sketch",
+    "display_name": "Sketch",
+    "filename": "Sketch.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+z",
+    "priority": 163
+  },
+  "ctrl+shift+1": {
+    "brush_name": "Sketch chrome",
+    "display_name": "Sketch chrome",
+    "filename": "Sketch_chrome.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+1",
+    "priority": 164
+  },
+  "ctrl+shift+2": {
+    "brush_name": "Sketch fur",
+    "display_name": "Sketch fur",
+    "filename": "Sketch_fur.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+2",
+    "priority": 165
+  },
+  "ctrl+shift+3": {
+    "brush_name": "Sketch line",
+    "display_name": "Sketch line",
+    "filename": "Sketch_line.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+3",
+    "priority": 166
+  },
+  "ctrl+shift+4": {
+    "brush_name": "Sketch shade",
+    "display_name": "Sketch shade",
+    "filename": "Sketch_shade.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+4",
+    "priority": 167
+  },
+  "ctrl+shift+5": {
+    "brush_name": "Sketch shade wash",
+    "display_name": "Sketch shade wash",
+    "filename": "Sketch_shade_wash.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+5",
+    "priority": 168
+  },
+  "ctrl+shift+6": {
+    "brush_name": "Sketch wires",
+    "display_name": "Sketch wires",
+    "filename": "Sketch_wires.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+6",
+    "priority": 169
+  },
+  "ctrl+shift+7": {
+    "brush_name": "Smudge block tilt",
+    "display_name": "Smudge block tilt",
+    "filename": "Smudge_block_tilt.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+7",
+    "priority": 170
+  },
+  "ctrl+shift+8": {
+    "brush_name": "Smudge rake",
+    "display_name": "Smudge rake",
+    "filename": "Smudge_rake.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+8",
+    "priority": 171
+  },
+  "ctrl+shift+9": {
+    "brush_name": "Smudge rake 2",
+    "display_name": "Smudge rake 2",
+    "filename": "Smudge_rake_2.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+9",
+    "priority": 172
+  },
+  "ctrl+shift+0": {
+    "brush_name": "Smudge soft",
+    "display_name": "Smudge soft",
+    "filename": "Smudge_soft.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+shift+0",
+    "priority": 173
+  },
+  "alt+shift+a": {
+    "brush_name": "Smudge textured",
+    "display_name": "Smudge textured",
+    "filename": "Smudge_textured.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+a",
+    "priority": 174
+  },
+  "alt+shift+b": {
+    "brush_name": "Sparkle wet",
+    "display_name": "Sparkle wet",
+    "filename": "Sparkle_wet.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+b",
+    "priority": 175
+  },
+  "alt+shift+c": {
+    "brush_name": "Sparkle wet soft",
+    "display_name": "Sparkle wet soft",
+    "filename": "Sparkle_wet_soft.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+c",
+    "priority": 176
+  },
+  "alt+shift+d": {
+    "brush_name": "Special FuzzyColor",
+    "display_name": "Special FuzzyColor",
+    "filename": "Special_FuzzyColor.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+d",
+    "priority": 177
+  },
+  "alt+shift+e": {
+    "brush_name": "Special particles crazy",
+    "display_name": "Special particles crazy",
+    "filename": "Special_particles_crazy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+e",
+    "priority": 178
+  },
+  "alt+shift+f": {
+    "brush_name": "Splat mix cells",
+    "display_name": "Splat mix cells",
+    "filename": "Splat_mix_cells.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+f",
+    "priority": 179
+  },
+  "alt+shift+g": {
+    "brush_name": "Splat texture",
+    "display_name": "Splat texture",
+    "filename": "Splat_texture.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+g",
+    "priority": 180
+  },
+  "alt+shift+h": {
+    "brush_name": "Splat texture 2",
+    "display_name": "Splat texture 2",
+    "filename": "Splat_texture_2.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+h",
+    "priority": 181
+  },
+  "alt+shift+i": {
+    "brush_name": "Splat wet cells",
+    "display_name": "Splat wet cells",
+    "filename": "Splat_wet_cells.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+i",
+    "priority": 182
+  },
+  "alt+shift+j": {
+    "brush_name": "Splatter thin",
+    "display_name": "Splatter thin",
+    "filename": "Splatter_thin.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+j",
+    "priority": 183
+  },
+  "alt+shift+k": {
+    "brush_name": "Sponge texture",
+    "display_name": "Sponge texture",
+    "filename": "Sponge_texture.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+k",
+    "priority": 184
+  },
+  "alt+shift+l": {
+    "brush_name": "Tangent normal drawing angle",
+    "display_name": "Tangent normal drawing angle",
+    "filename": "Tangent_normal_drawing_angle.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+l",
+    "priority": 185
+  },
+  "alt+shift+m": {
+    "brush_name": "Tangent normal hairy",
+    "display_name": "Tangent normal hairy",
+    "filename": "Tangent_normal_hairy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+m",
+    "priority": 186
+  },
+  "alt+shift+n": {
+    "brush_name": "Tangent normal pixel",
+    "display_name": "Tangent normal pixel",
+    "filename": "Tangent_normal_pixel.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+n",
+    "priority": 187
+  },
+  "alt+shift+o": {
+    "brush_name": "Tangent normal y inverted",
+    "display_name": "Tangent normal y inverted",
+    "filename": "Tangent_normal_y_inverted.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+o",
+    "priority": 188
+  },
+  "alt+shift+p": {
+    "brush_name": "Texture fuzzy",
+    "display_name": "Texture fuzzy",
+    "filename": "Texture_fuzzy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+p",
+    "priority": 189
+  },
+  "alt+shift+q": {
+    "brush_name": "Texture hair",
+    "display_name": "Texture hair",
+    "filename": "Texture_hair.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+q",
+    "priority": 190
+  },
+  "alt+shift+r": {
+    "brush_name": "Texture leaves fuzzy",
+    "display_name": "Texture leaves fuzzy",
+    "filename": "Texture_leaves_fuzzy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+r",
+    "priority": 191
+  },
+  "alt+shift+s": {
+    "brush_name": "Textured tilt",
+    "display_name": "Textured tilt",
+    "filename": "Textured_tilt.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+s",
+    "priority": 192
+  },
+  "alt+shift+t": {
+    "brush_name": "e) Marker Chisel Smooth",
+    "display_name": "e) Marker Chisel Smooth",
+    "filename": "e)_Marker_Chisel_Smooth.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+t",
+    "priority": 193
+  },
+  "alt+shift+u": {
+    "brush_name": "e) Marker Details",
+    "display_name": "e) Marker Details",
+    "filename": "e)_Marker_Details.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+u",
+    "priority": 194
+  },
+  "alt+shift+v": {
+    "brush_name": "e) Marker Dry",
+    "display_name": "e) Marker Dry",
+    "filename": "e)_Marker_Dry.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+v",
+    "priority": 195
+  },
+  "alt+shift+w": {
+    "brush_name": "f) Bristles-1 Details",
+    "display_name": "f) Bristles-1 Details",
+    "filename": "f)_Bristles-1_Details.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+w",
+    "priority": 196
+  },
+  "alt+shift+x": {
+    "brush_name": "f) Bristles-2 Flat Rough",
+    "display_name": "f) Bristles-2 Flat Rough",
+    "filename": "f)_Bristles-2_Flat_Rough.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+x",
+    "priority": 197
+  },
+  "alt+shift+y": {
+    "brush_name": "f) Bristles-3 Large Smooth",
+    "display_name": "f) Bristles-3 Large Smooth",
+    "filename": "f)_Bristles-3_Large_Smooth.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+y",
+    "priority": 198
+  },
+  "alt+shift+z": {
+    "brush_name": "f) Bristles-4 Glaze",
+    "display_name": "f) Bristles-4 Glaze",
+    "filename": "f)_Bristles-4_Glaze.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+z",
+    "priority": 199
+  },
+  "alt+shift+1": {
+    "brush_name": "f) Bristles-5 Flat",
+    "display_name": "f) Bristles-5 Flat",
+    "filename": "f)_Bristles-5_Flat.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+1",
+    "priority": 200
+  },
+  "alt+shift+2": {
+    "brush_name": "f) Charcoal Rock Soft",
+    "display_name": "f) Charcoal Rock Soft",
+    "filename": "f)_Charcoal_Rock_Soft.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+2",
+    "priority": 201
+  },
+  "alt+shift+3": {
+    "brush_name": "f) Dry Roller",
+    "display_name": "f) Dry Roller",
+    "filename": "f)_Dry_Roller.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+3",
+    "priority": 202
+  },
+  "alt+shift+4": {
+    "brush_name": "g) Dry Bristles",
+    "display_name": "g) Dry Bristles",
+    "filename": "g)_Dry_Bristles.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+4",
+    "priority": 203
+  },
+  "alt+shift+5": {
+    "brush_name": "g) Dry Bristles Eroded",
+    "display_name": "g) Dry Bristles Eroded",
+    "filename": "g)_Dry_Bristles_Eroded.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+5",
+    "priority": 204
+  },
+  "alt+shift+6": {
+    "brush_name": "g) Dry Brushing",
+    "display_name": "g) Dry Brushing",
+    "filename": "g)_Dry_Brushing.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+6",
+    "priority": 205
+  },
+  "alt+shift+7": {
+    "brush_name": "g) Dry Textured Creases",
+    "display_name": "g) Dry Textured Creases",
+    "filename": "g)_Dry_Textured_Creases.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+7",
+    "priority": 206
+  },
+  "alt+shift+8": {
+    "brush_name": "h) Chalk Details",
+    "display_name": "h) Chalk Details",
+    "filename": "h)_Chalk_Details.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+8",
+    "priority": 207
+  },
+  "alt+shift+9": {
+    "brush_name": "h) Chalk Grainy",
+    "display_name": "h) Chalk Grainy",
+    "filename": "h)_Chalk_Grainy.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+9",
+    "priority": 208
+  },
+  "alt+shift+0": {
+    "brush_name": "h) Chalk Soft",
+    "display_name": "h) Chalk Soft",
+    "filename": "h)_Chalk_Soft.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+shift+0",
+    "priority": 209
+  },
+  "ctrl+f1": {
+    "brush_name": "i) Wet Bristles",
+    "display_name": "i) Wet Bristles",
+    "filename": "i)_Wet_Bristles.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f1",
+    "priority": 210
+  },
+  "ctrl+f2": {
+    "brush_name": "i) Wet Bristles Rough",
+    "display_name": "i) Wet Bristles Rough",
+    "filename": "i)_Wet_Bristles_Rough.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f2",
+    "priority": 211
+  },
+  "ctrl+f3": {
+    "brush_name": "i) Wet Knife",
+    "display_name": "i) Wet Knife",
+    "filename": "i)_Wet_Knife.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f3",
+    "priority": 212
+  },
+  "ctrl+f4": {
+    "brush_name": "i) Wet Smear",
+    "display_name": "i) Wet Smear",
+    "filename": "i)_Wet_Smear.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f4",
+    "priority": 213
+  },
+  "ctrl+f5": {
+    "brush_name": "i) Wet Textured Soft",
+    "display_name": "i) Wet Textured Soft",
+    "filename": "i)_Wet_Textured_Soft.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f5",
+    "priority": 214
+  },
+  "ctrl+f6": {
+    "brush_name": "k) Blender Blur",
+    "display_name": "k) Blender Blur",
+    "filename": "k)_Blender_Blur.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f6",
+    "priority": 215
+  },
+  "ctrl+f7": {
+    "brush_name": "k) Blender Knife Edge",
+    "display_name": "k) Blender Knife Edge",
+    "filename": "k)_Blender_Knife_Edge.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f7",
+    "priority": 216
+  },
+  "ctrl+f8": {
+    "brush_name": "k) Blender Pixelize",
+    "display_name": "k) Blender Pixelize",
+    "filename": "k)_Blender_Pixelize.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f8",
+    "priority": 217
+  },
+  "ctrl+f9": {
+    "brush_name": "k) Blender Rake",
+    "display_name": "k) Blender Rake",
+    "filename": "k)_Blender_Rake.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f9",
+    "priority": 218
+  },
+  "ctrl+f10": {
+    "brush_name": "k) Blender Smear",
+    "display_name": "k) Blender Smear",
+    "filename": "k)_Blender_Smear.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f10",
+    "priority": 219
+  },
+  "ctrl+f11": {
+    "brush_name": "k) Blender Textured Soft",
+    "display_name": "k) Blender Textured Soft",
+    "filename": "k)_Blender_Textured_Soft.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f11",
+    "priority": 220
+  },
+  "ctrl+f12": {
+    "brush_name": "l) Adjust Color",
+    "display_name": "l) Adjust Color",
+    "filename": "l)_Adjust_Color.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f12",
+    "priority": 221
+  },
+  "ctrl+f13": {
+    "brush_name": "l) Adjust Dodge",
+    "display_name": "l) Adjust Dodge",
+    "filename": "l)_Adjust_Dodge.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f13",
+    "priority": 222
+  },
+  "ctrl+f14": {
+    "brush_name": "l) Adjust Lighten",
+    "display_name": "l) Adjust Lighten",
+    "filename": "l)_Adjust_Lighten.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f14",
+    "priority": 223
+  },
+  "ctrl+f15": {
+    "brush_name": "l) Adjust Overlay Burn",
+    "display_name": "l) Adjust Overlay Burn",
+    "filename": "l)_Adjust_Overlay_Burn.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f15",
+    "priority": 224
+  },
+  "ctrl+f16": {
+    "brush_name": "m) RGBA 01 Thick-dry",
+    "display_name": "m) RGBA 01 Thick-dry",
+    "filename": "m)_RGBA_01_Thick-dry.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f16",
+    "priority": 225
+  },
+  "ctrl+f17": {
+    "brush_name": "m) RGBA 03 Rake",
+    "display_name": "m) RGBA 03 Rake",
+    "filename": "m)_RGBA_03_Rake.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f17",
+    "priority": 226
+  },
+  "ctrl+f18": {
+    "brush_name": "m) RGBA 04 Impasto",
+    "display_name": "m) RGBA 04 Impasto",
+    "filename": "m)_RGBA_04_Impasto.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f18",
+    "priority": 227
+  },
+  "ctrl+f19": {
+    "brush_name": "m) RGBA 05 Impasto-details",
+    "display_name": "m) RGBA 05 Impasto-details",
+    "filename": "m)_RGBA_05_Impasto-details.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f19",
+    "priority": 228
+  },
+  "ctrl+f20": {
+    "brush_name": "m) RGBA 06 Rock",
+    "display_name": "m) RGBA 06 Rock",
+    "filename": "m)_RGBA_06_Rock.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f20",
+    "priority": 229
+  },
+  "ctrl+f21": {
+    "brush_name": "pixel1",
+    "display_name": "pixel1",
+    "filename": "pixel1.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f21",
+    "priority": 230
+  },
+  "ctrl+f22": {
+    "brush_name": "t) Shapes Fill",
+    "display_name": "t) Shapes Fill",
+    "filename": "t)_Shapes_Fill.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f22",
+    "priority": 231
+  },
+  "ctrl+f23": {
+    "brush_name": "t) Shapes Mecha",
+    "display_name": "t) Shapes Mecha",
+    "filename": "t)_Shapes_Mecha.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f23",
+    "priority": 232
+  },
+  "ctrl+f24": {
+    "brush_name": "t) Shapes Rounded",
+    "display_name": "t) Shapes Rounded",
+    "filename": "t)_Shapes_Rounded.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "ctrl+f24",
+    "priority": 233
+  },
+  "alt+f1": {
+    "brush_name": "t) Shapes Spikes",
+    "display_name": "t) Shapes Spikes",
+    "filename": "t)_Shapes_Spikes.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f1",
+    "priority": 234
+  },
+  "alt+f2": {
+    "brush_name": "t) Shapes Square",
+    "display_name": "t) Shapes Square",
+    "filename": "t)_Shapes_Square.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f2",
+    "priority": 235
+  },
+  "alt+f3": {
+    "brush_name": "u) Pixel Art",
+    "display_name": "u) Pixel Art",
+    "filename": "u)_Pixel_Art.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f3",
+    "priority": 236
+  },
+  "alt+f4": {
+    "brush_name": "u) Pixel Art Dithering",
+    "display_name": "u) Pixel Art Dithering",
+    "filename": "u)_Pixel_Art_Dithering.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f4",
+    "priority": 237
+  },
+  "alt+f5": {
+    "brush_name": "u) Pixel Art Fill",
+    "display_name": "u) Pixel Art Fill",
+    "filename": "u)_Pixel_Art_Fill.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f5",
+    "priority": 238
+  },
+  "alt+f6": {
+    "brush_name": "v) Clone Tool",
+    "display_name": "v) Clone Tool",
+    "filename": "v)_Clone_Tool.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f6",
+    "priority": 239
+  },
+  "alt+f7": {
+    "brush_name": "v) Distort Grow",
+    "display_name": "v) Distort Grow",
+    "filename": "v)_Distort_Grow.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f7",
+    "priority": 240
+  },
+  "alt+f8": {
+    "brush_name": "v) Distort Move",
+    "display_name": "v) Distort Move",
+    "filename": "v)_Distort_Move.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f8",
+    "priority": 241
+  },
+  "alt+f9": {
+    "brush_name": "v) Experimental Webs",
+    "display_name": "v) Experimental Webs",
+    "filename": "v)_Experimental_Webs.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f9",
+    "priority": 242
+  },
+  "alt+f10": {
+    "brush_name": "v) Sketching-1 Chrome Thin",
+    "display_name": "v) Sketching-1 Chrome Thin",
+    "filename": "v)_Sketching-1_Chrome_Thin.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f10",
+    "priority": 243
+  },
+  "alt+f11": {
+    "brush_name": "v) Sketching-2 Chrome Large",
+    "display_name": "v) Sketching-2 Chrome Large",
+    "filename": "v)_Sketching-2_Chrome_Large.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f11",
+    "priority": 244
+  },
+  "alt+f12": {
+    "brush_name": "v) Sketching-3 Leaky",
+    "display_name": "v) Sketching-3 Leaky",
+    "filename": "v)_Sketching-3_Leaky.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f12",
+    "priority": 245
+  },
+  "alt+f13": {
+    "brush_name": "v) Texture Impressionism",
+    "display_name": "v) Texture Impressionism",
+    "filename": "v)_Texture_Impressionism.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f13",
+    "priority": 246
+  },
+  "alt+f14": {
+    "brush_name": "v) Texture Pointillism",
+    "display_name": "v) Texture Pointillism",
+    "filename": "v)_Texture_Pointillism.kpp",
+    "category": "Paint",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f14",
+    "priority": 247
+  },
+  "alt+f15": {
+    "brush_name": "w) Texture Normal Map",
+    "display_name": "w) Texture Normal Map",
+    "filename": "w)_Texture_Normal_Map.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f15",
+    "priority": 248
+  },
+  "alt+f16": {
+    "brush_name": "x) Filter Blur",
+    "display_name": "x) Filter Blur",
+    "filename": "x)_Filter_Blur.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f16",
+    "priority": 249
+  },
+  "alt+f17": {
+    "brush_name": "y) Screentone Moire",
+    "display_name": "y) Screentone Moire",
+    "filename": "y)_Screentone_Moire.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f17",
+    "priority": 250
+  },
+  "alt+f18": {
+    "brush_name": "y) Screentone Pressure",
+    "display_name": "y) Screentone Pressure",
+    "filename": "y)_Screentone_Pressure.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f18",
+    "priority": 251
+  },
+  "alt+f19": {
+    "brush_name": "y) Screentones Regular",
+    "display_name": "y) Screentones Regular",
+    "filename": "y)_Screentones_Regular.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f19",
+    "priority": 252
+  },
+  "alt+f20": {
+    "brush_name": "y) Texture Big",
+    "display_name": "y) Texture Big",
+    "filename": "y)_Texture_Big.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f20",
+    "priority": 253
+  },
+  "alt+f21": {
+    "brush_name": "y) Texture Crackles",
+    "display_name": "y) Texture Crackles",
+    "filename": "y)_Texture_Crackles.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f21",
+    "priority": 254
+  },
+  "alt+f22": {
+    "brush_name": "y) Texture Hair",
+    "display_name": "y) Texture Hair",
+    "filename": "y)_Texture_Hair.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f22",
+    "priority": 255
+  },
+  "alt+f23": {
+    "brush_name": "y) Texture Large Splat",
+    "display_name": "y) Texture Large Splat",
+    "filename": "y)_Texture_Large_Splat.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f23",
+    "priority": 256
+  },
+  "alt+f24": {
+    "brush_name": "y) Texture Noise",
+    "display_name": "y) Texture Noise",
+    "filename": "y)_Texture_Noise.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "alt+f24",
+    "priority": 257
+  },
+  "shift+f1": {
+    "brush_name": "y) Texture Random Particles",
+    "display_name": "y) Texture Random Particles",
+    "filename": "y)_Texture_Random_Particles.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f1",
+    "priority": 258
+  },
+  "shift+f2": {
+    "brush_name": "y) Texture Reptile",
+    "display_name": "y) Texture Reptile",
+    "filename": "y)_Texture_Reptile.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f2",
+    "priority": 259
+  },
+  "shift+f3": {
+    "brush_name": "y) Texture Snow Pile",
+    "display_name": "y) Texture Snow Pile",
+    "filename": "y)_Texture_Snow_Pile.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f3",
+    "priority": 260
+  },
+  "shift+f4": {
+    "brush_name": "y) Texture Spines",
+    "display_name": "y) Texture Spines",
+    "filename": "y)_Texture_Spines.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f4",
+    "priority": 261
+  },
+  "shift+f5": {
+    "brush_name": "y) Texture Splat",
+    "display_name": "y) Texture Splat",
+    "filename": "y)_Texture_Splat.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f5",
+    "priority": 262
+  },
+  "shift+f6": {
+    "brush_name": "y) Texture Starfield",
+    "display_name": "y) Texture Starfield",
+    "filename": "y)_Texture_Starfield.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f6",
+    "priority": 263
+  },
+  "shift+f7": {
+    "brush_name": "y) Texture Wood Fiber",
+    "display_name": "y) Texture Wood Fiber",
+    "filename": "y)_Texture_Wood_Fiber.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f7",
+    "priority": 264
+  },
+  "shift+f8": {
+    "brush_name": "z) Stamp Bokeh",
+    "display_name": "z) Stamp Bokeh",
+    "filename": "z)_Stamp_Bokeh.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f8",
+    "priority": 265
+  },
+  "shift+f9": {
+    "brush_name": "z) Stamp Floor",
+    "display_name": "z) Stamp Floor",
+    "filename": "z)_Stamp_Floor.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f9",
+    "priority": 266
+  },
+  "shift+f10": {
+    "brush_name": "z) Stamp Grass",
+    "display_name": "z) Stamp Grass",
+    "filename": "z)_Stamp_Grass.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f10",
+    "priority": 267
+  },
+  "shift+f11": {
+    "brush_name": "z) Stamp Grass Patch",
+    "display_name": "z) Stamp Grass Patch",
+    "filename": "z)_Stamp_Grass_Patch.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f11",
+    "priority": 268
+  },
+  "shift+f12": {
+    "brush_name": "z) Stamp Hearts",
+    "display_name": "z) Stamp Hearts",
+    "filename": "z)_Stamp_Hearts.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f12",
+    "priority": 269
+  },
+  "shift+f13": {
+    "brush_name": "z) Stamp Herbals",
+    "display_name": "z) Stamp Herbals",
+    "filename": "z)_Stamp_Herbals.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f13",
+    "priority": 270
+  },
+  "shift+f14": {
+    "brush_name": "z) Stamp Leaves",
+    "display_name": "z) Stamp Leaves",
+    "filename": "z)_Stamp_Leaves.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f14",
+    "priority": 271
+  },
+  "shift+f15": {
+    "brush_name": "z) Stamp Mountains Distant",
+    "display_name": "z) Stamp Mountains Distant",
+    "filename": "z)_Stamp_Mountains_Distant.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f15",
+    "priority": 272
+  },
+  "shift+f16": {
+    "brush_name": "z) Stamp Shoujo Bubbles",
+    "display_name": "z) Stamp Shoujo Bubbles",
+    "filename": "z)_Stamp_Shoujo_Bubbles.kpp",
+    "category": "Ink",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f16",
+    "priority": 273
+  },
+  "shift+f17": {
+    "brush_name": "z) Stamp Sparkles",
+    "display_name": "z) Stamp Sparkles",
+    "filename": "z)_Stamp_Sparkles.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f17",
+    "priority": 274
+  },
+  "shift+f18": {
+    "brush_name": "z) Stamp Stylised Tree",
+    "display_name": "z) Stamp Stylised Tree",
+    "filename": "z)_Stamp_Stylised_Tree.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f18",
+    "priority": 275
+  },
+  "shift+f19": {
+    "brush_name": "z) Stamp Vegetal",
+    "display_name": "z) Stamp Vegetal",
+    "filename": "z)_Stamp_Vegetal.kpp",
+    "category": "Other",
+    "icon": "\ud83d\udd8c\ufe0f",
+    "shortcut": "shift+f19",
+    "priority": 276
+  }
+}

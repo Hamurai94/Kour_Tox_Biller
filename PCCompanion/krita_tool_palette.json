@@ -1,0 +1,202 @@
+{
+  "app": "krita",
+  "version": "1.0",
+  "total_brushes": 16,
+  "categories": {},
+  "quick_access": [
+    {
+      "name": "j)_WaterC_Flat_Decay_Tilt",
+      "display_name": "J) Waterc Flat Decay Tilt",
+      "category": "Watercolor",
+      "engine": "brush",
+      "icon": "\ud83d\udca7",
+      "file_path": "j)_WaterC_Flat_Decay_Tilt"
+    },
+    {
+      "name": "a)_Eraser_Circle",
+      "display_name": "A) Eraser Circle",
+      "category": "Brushes",
+      "engine": "brush",
+      "icon": "\ud83d\udd8c\ufe0f",
+      "file_path": "a)_Eraser_Circle"
+    }
+  ],
+  "tools": {
+    "brush": {
+      "name": "Brush Engine",
+      "icon": "\ud83d\udd8c\ufe0f",
+      "shortcut": "B",
+      "subcategories": {
+        "Watercolor": [
+          {
+            "name": "j)_WaterC_Flat_Decay_Tilt",
+            "display_name": "J) Waterc Flat Decay Tilt",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Flat_Decay_Tilt"
+          },
+          {
+            "name": "j)_WaterC_Basic_Lines-Dry",
+            "display_name": "J) Waterc Basic Lines-Dry",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Lines-Dry"
+          },
+          {
+            "name": "j)_WaterC_Spread_WideArea",
+            "display_name": "J) Waterc Spread Widearea",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Spread_WideArea"
+          },
+          {
+            "name": "j)_WaterC_Basic_Round-Fringe_02",
+            "display_name": "J) Waterc Basic Round-Fringe 02",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Round-Fringe_02"
+          },
+          {
+            "name": "j)_WaterC_Special_Blobs",
+            "display_name": "J) Waterc Special Blobs",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Special_Blobs"
+          },
+          {
+            "name": "j)_WaterC_Spread",
+            "display_name": "J) Waterc Spread",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Spread"
+          },
+          {
+            "name": "j)_WaterC_Flat_Big-Grain_Tilt",
+            "display_name": "J) Waterc Flat Big-Grain Tilt",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Flat_Big-Grain_Tilt"
+          },
+          {
+            "name": "j)_WaterC_Basic_Round-Grain",
+            "display_name": "J) Waterc Basic Round-Grain",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Round-Grain"
+          },
+          {
+            "name": "j)_WaterC_Water-Pattern",
+            "display_name": "J) Waterc Water-Pattern",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Water-Pattern"
+          },
+          {
+            "name": "j)_WaterC_Basic_Lines-Wet",
+            "display_name": "J) Waterc Basic Lines-Wet",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Lines-Wet"
+          },
+          {
+            "name": "j)_WaterC_Basic_Lines-Wet-Pattern",
+            "display_name": "J) Waterc Basic Lines-Wet-Pattern",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Lines-Wet-Pattern"
+          },
+          {
+            "name": "j)_WaterC_Basic_Round-Grunge",
+            "display_name": "J) Waterc Basic Round-Grunge",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Basic_Round-Grunge"
+          },
+          {
+            "name": "j)_WaterC_Spread-Pattern",
+            "display_name": "J) Waterc Spread-Pattern",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Spread-Pattern"
+          },
+          {
+            "name": "j)_WaterC_Special_Splats",
+            "display_name": "J) Waterc Special Splats",
+            "category": "Watercolor",
+            "engine": "brush",
+            "icon": "\ud83d\udca7",
+            "file_path": "j)_WaterC_Special_Splats"
+          }
+        ],
+        "Brushes": [
+          {
+            "name": "a)_Eraser_Circle",
+            "display_name": "A) Eraser Circle",
+            "category": "Brushes",
+            "engine": "brush",
+            "icon": "\ud83d\udd8c\ufe0f",
+            "file_path": "a)_Eraser_Circle"
+          },
+          {
+            "name": "b)_Basic-5_Size_default",
+            "display_name": "B) Basic-5 Size Default",
+            "category": "Brushes",
+            "engine": "brush",
+            "icon": "\ud83d\udd8c\ufe0f",
+            "file_path": "b)_Basic-5_Size_default"
+          }
+        ]
+      }
+    },
+    "eraser": {
+      "name": "Eraser",
+      "icon": "\ud83e\uddfd",
+      "shortcut": "E",
+      "subcategories": {}
+    },
+    "selection": {
+      "name": "Selection Tools",
+      "icon": "\u2b1a",
+      "shortcut": "R",
+      "subcategories": {
+        "Rectangle": [
+          {
+            "name": "Rectangle Select",
+            "shortcut": "R"
+          }
+        ],
+        "Ellipse": [
+          {
+            "name": "Ellipse Select",
+            "shortcut": "J"
+          }
+        ],
+        "Polygon": [
+          {
+            "name": "Polygon Select",
+            "shortcut": "U"
+          }
+        ],
+        "Freehand": [
+          {
+            "name": "Freehand Select",
+            "shortcut": "O"
+          }
+        ]
+      }
+    }
+  }
+}

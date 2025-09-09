@@ -1,0 +1,4 @@
+[test_brush]
+_k_friendly_name = Test Brush
+default = Meta+A
+
