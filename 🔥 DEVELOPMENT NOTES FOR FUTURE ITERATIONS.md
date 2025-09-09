@@ -83,8 +83,8 @@
 - **Real-time adaptation**: Reads actual user settings
 - **Cost effective**: $10-20 app vs $200+ hardware
 
-### **Revolutionary Features:**
-- **World's first CSP database cracker**: Reads internal SQLite databases
+### **Key Features:**
+- **CSP database integration**: Reads internal SQLite databases
 - **Dynamic F-key detection**: Real-time user shortcut reading
 - **Multi-app adaptation**: Same interface, different software
 - **Brush preset integration**: Reads actual installed brushes

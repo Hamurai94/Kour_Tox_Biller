@@ -6,7 +6,7 @@ Just like we cracked CSP's SQLite database, now we crack Krita's!
 Krita stores ALL brush presets in: resourcecache.sqlite
 This contains 276+ brush presets vs the 16 we were finding in files!
 
-THIS IS THE SAME REVOLUTIONARY APPROACH AS CSP!
+THIS USES THE SAME APPROACH AS CSP!
 """
 
 import sqlite3

@@ -209,10 +209,10 @@ if __name__ == "__main__":
         else:
             print(f"{key}: {data['icon']} {data['description']}")
     
-    # Save the revolutionary mapping
+    # Save the mapping
     with open('ultimate_csp_mapping.json', 'w') as f:
         json.dump(ultimate_mapping, f, indent=2, ensure_ascii=False)
     
-    print(f"\n💰 REVOLUTIONARY MAPPING SAVED!")
-    print("🚀 Ready to destroy the hardware remote market!")
+    print(f"\n💰 MAPPING SAVED!")
+    print("🚀 Ready for deployment!")
     print("💎 This is the killer feature that makes millions!")

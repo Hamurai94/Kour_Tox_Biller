@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CSP COMPLETE PARSER - The Revolutionary Integration
+CSP COMPLETE PARSER - Complete Integration
 Cross-references CSP's Material DB + Tool Groups + Shortcuts
 This is the killer feature that destroys the hardware remote market!
 """

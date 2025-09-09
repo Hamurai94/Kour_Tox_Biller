@@ -4,7 +4,7 @@ KRITA BRUSH SHORTCUT MAPPER - THE ULTIMATE SOLUTION!
 Creates dynamic shortcut mappings for Krita brushes
 Can even CONFIGURE Krita to use our shortcuts!
 
-REVOLUTIONARY APPROACH:
+APPROACH:
 1. Detect popular brushes from database
 2. Assign F1-F12 shortcuts to them  
 3. Optionally configure Krita to use these shortcuts

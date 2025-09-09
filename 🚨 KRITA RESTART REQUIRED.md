@@ -27,7 +27,7 @@ We just installed **276 brush shortcuts** directly into Krita's configuration:
 
 **Once Krita restarts, every brush selection from our app will work instantly!** 🚀
 
-## 💥 **REVOLUTIONARY ACHIEVEMENT:**
+## 💥 **ACHIEVEMENT:**
 **We just gave Krita the SAME instant brush access that CSP has with F-keys, but for ALL 276 brushes instead of just 12!**
 
 **This is UNPRECEDENTED in digital art software!** 🎨💪
