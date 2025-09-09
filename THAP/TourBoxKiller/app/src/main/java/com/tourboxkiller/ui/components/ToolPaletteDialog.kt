@@ -39,12 +39,13 @@ data class CSPSubTool(
 fun ToolPaletteDialog(
     isVisible: Boolean,
     tools: List<CSPTool>,
+    selectedToolCategory: CSPTool?,
     onDismiss: () -> Unit,
     onToolSelected: (CSPTool, CSPSubTool?) -> Unit,
+    onToolCategoryChanged: (CSPTool?) -> Unit,
     webSocketClient: ArtRemoteWebSocketClient
 ) {
     val haptic = LocalHapticFeedback.current
-    var selectedTool by remember { mutableStateOf<CSPTool?>(null) }
     
     if (isVisible) {
         Dialog(onDismissRequest = {
@@ -71,15 +72,31 @@ fun ToolPaletteDialog(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
-                            text = if (selectedTool == null) "🛠️ CSP Tools" else "🎨 ${selectedTool!!.name}",
+                            text = if (selectedToolCategory == null) {
+                                when {
+                                    tools.any { it.id.startsWith("krita_") } -> "🎨 Krita Brushes"
+                                    else -> "🛠️ CSP Tools"
+                                }
+                            } else "🎨 ${selectedToolCategory!!.name}",
                             style = MaterialTheme.typography.headlineSmall,
                             fontWeight = FontWeight.Bold
                         )
                         
-                        // No back button - just tap outside the dialog or use system back
+                        // Add back button when in sub-tool view
+                        if (selectedToolCategory != null) {
+                            Button(
+                                onClick = {
+                                    haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                    onToolCategoryChanged(null)  // Go back to main categories
+                                },
+                                modifier = Modifier.padding(end = 8.dp)
+                            ) {
+                                Text("← Back")
+                            }
+                        }
                     }
                     
-                    if (selectedTool == null) {
+                    if (selectedToolCategory == null) {
                         // Show main tools (Level 1)
                         Text(
                             text = "Select a tool category:",
@@ -113,7 +130,7 @@ fun ToolPaletteDialog(
                                                     onDismiss()
                                                 } else {
                                                     // Show sub-tools if available
-                                                    selectedTool = tool
+                                                    onToolCategoryChanged(tool)
                                                 }
                                             }
                                         )
@@ -128,7 +145,7 @@ fun ToolPaletteDialog(
                     } else {
                         // Show sub-tools (Level 2)
                         Text(
-                            text = "${selectedTool!!.subTools.size} sub-tools available",
+                            text = "${selectedToolCategory!!.subTools.size} sub-tools available",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.padding(bottom = 16.dp)
@@ -137,7 +154,7 @@ fun ToolPaletteDialog(
                         LazyColumn(
                             verticalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
-                            items(selectedTool!!.subTools.chunked(2)) { subToolPair ->
+                            items(selectedToolCategory!!.subTools.chunked(2)) { subToolPair ->
                                 Row(
                                     modifier = Modifier.fillMaxWidth(),
                                     horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -148,10 +165,10 @@ fun ToolPaletteDialog(
                                             modifier = Modifier.weight(1f),
                                             onClick = {
                                                 haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
-                                                onToolSelected(selectedTool!!, subTool)
+                                                onToolSelected(selectedToolCategory!!, subTool)
                                                 // Send sub-tool selection command
                                                 webSocketClient.sendAction("select_subtool", mapOf(
-                                                    "tool" to selectedTool!!.id,
+                                                    "tool" to selectedToolCategory!!.id,
                                                     "subtool_uuid" to subTool.uuid,
                                                     "subtool_name" to subTool.name
                                                 ))

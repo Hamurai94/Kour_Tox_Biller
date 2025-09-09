@@ -21,12 +21,33 @@ data class CSPFavorite(
     val command: String?
 )
 
+data class DetectedApp(
+    val app: String?,
+    val displayName: String,
+    val hasFavorites: Boolean,
+    val supportedTools: List<String>
+)
+
+data class KritaBrush(
+    val name: String,
+    val displayName: String,
+    val category: String,
+    val icon: String,
+    val filePath: String
+)
+
 class ArtRemoteWebSocketClient {
     private val _connectionState = MutableStateFlow(ConnectionState())
     val connectionState: StateFlow<ConnectionState> = _connectionState.asStateFlow()
     
     private val _cspFavorites = MutableStateFlow<List<CSPFavorite>>(emptyList())
     val cspFavorites: StateFlow<List<CSPFavorite>> = _cspFavorites.asStateFlow()
+    
+    private val _detectedApp = MutableStateFlow<DetectedApp?>(null)
+    val detectedApp: StateFlow<DetectedApp?> = _detectedApp.asStateFlow()
+    
+    private val _kritaBrushes = MutableStateFlow<List<KritaBrush>>(emptyList())
+    val kritaBrushes: StateFlow<List<KritaBrush>> = _kritaBrushes.asStateFlow()
     
     private var webSocket: WebSocket? = null
     private val client = OkHttpClient.Builder()
@@ -87,6 +108,87 @@ class ArtRemoteWebSocketClient {
                         // Update state
                         _cspFavorites.value = favoritesList
                         android.util.Log.d("CSP_Favorites", "Updated ${favoritesList.size} favorites")
+                    } else if (action == "app_detected") {
+                        // Handle detected app info for UI adaptation
+                        val appName = response.optString("app", null)
+                        val appDisplayName = response.optString("app_name", "Unknown")
+                        val hasFavorites = response.optBoolean("has_favorites", false)
+                        val supportedToolsArray = response.optJSONArray("supported_tools")
+                        
+                        val supportedTools = mutableListOf<String>()
+                        if (supportedToolsArray != null) {
+                            for (i in 0 until supportedToolsArray.length()) {
+                                supportedTools.add(supportedToolsArray.getString(i))
+                            }
+                        }
+                        
+                        _detectedApp.value = DetectedApp(
+                            app = appName,
+                            displayName = appDisplayName,
+                            hasFavorites = hasFavorites,
+                            supportedTools = supportedTools
+                        )
+                        
+                        // Handle Krita brush data - COMPLETE DATABASE INTEGRATION
+                        if (appName == "krita") {
+                            val kritaBrushesJson = response.optJSONObject("krita_brushes")
+                            if (kritaBrushesJson != null) {
+                                val kritaBrushesList = mutableListOf<KritaBrush>()
+                                
+                                // Parse categories (all 276 brushes organized!)
+                                val categoriesJson = kritaBrushesJson.optJSONObject("categories")
+                                if (categoriesJson != null) {
+                                    val categoryNames = categoriesJson.names()
+                                    if (categoryNames != null) {
+                                        for (i in 0 until categoryNames.length()) {
+                                            val categoryName = categoryNames.getString(i)
+                                            val brushesArray = categoriesJson.optJSONArray(categoryName)
+                                            
+                                            if (brushesArray != null) {
+                                                for (j in 0 until brushesArray.length()) {
+                                                    val brushJson = brushesArray.getJSONObject(j)
+                                                    kritaBrushesList.add(KritaBrush(
+                                                        name = brushJson.optString("name", "Unknown"),
+                                                        displayName = brushJson.optString("display_name", brushJson.optString("name", "Unknown")),
+                                                        category = categoryName,
+                                                        icon = brushJson.optString("icon", "🖌️"),
+                                                        filePath = brushJson.optString("filename", "")
+                                                    ))
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                // Fallback: Parse quick_access if categories failed
+                                if (kritaBrushesList.isEmpty()) {
+                                    val quickAccessArray = kritaBrushesJson.optJSONArray("quick_access")
+                                    if (quickAccessArray != null) {
+                                        for (i in 0 until quickAccessArray.length()) {
+                                            val brushJson = quickAccessArray.getJSONObject(i)
+                                            kritaBrushesList.add(KritaBrush(
+                                                name = brushJson.optString("name", "Unknown"),
+                                                displayName = brushJson.optString("display_name", brushJson.optString("name", "Unknown")),
+                                                category = brushJson.optString("category", "Other"),
+                                                icon = brushJson.optString("icon", "🖌️"),
+                                                filePath = brushJson.optString("file_path", "")
+                                            ))
+                                        }
+                                    }
+                                }
+                                
+                                _kritaBrushes.value = kritaBrushesList
+                                android.util.Log.d("Krita_Brushes", "🔥 BREAKTHROUGH: Loaded ${kritaBrushesList.size} Krita brushes from database!")
+                                
+                                // Log categories
+                                val categories = kritaBrushesList.groupBy { it.category }
+                                for ((category, brushes) in categories) {
+                                    android.util.Log.d("Krita_Categories", "📁 $category: ${brushes.size} brushes")
+                                }
+                            }
+                        }
+                        
+                        android.util.Log.d("App_Detection", "Detected app: $appDisplayName (${supportedTools.size} tools)")
                     }
                 } catch (e: Exception) {
                     android.util.Log.e("WebSocket", "Error parsing message: $text", e)

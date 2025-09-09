@@ -11,6 +11,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.input.pointer.pointerInput
@@ -19,6 +20,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
+import kotlin.math.abs
 import com.tourboxkiller.data.ArtRemoteWebSocketClient
 import kotlin.math.*
 import androidx.compose.material3.Slider
@@ -32,17 +36,111 @@ fun TourBoxControlLayout(
 ) {
     val haptic = LocalHapticFeedback.current
     var showToolPalette by remember { mutableStateOf(false) }
+    var selectedToolCategory by remember { mutableStateOf<CSPTool?>(null) }
+    var showSwipeMode by remember { mutableStateOf(false) }
     val cspFavorites by webSocketClient.cspFavorites.collectAsState()
+    val detectedApp by webSocketClient.detectedApp.collectAsState()
+    val kritaBrushes by webSocketClient.kritaBrushes.collectAsState()
     
     // Convert CSPFavorite to CSPSubTool for UI
     val dynamicFavorites = cspFavorites.map { favorite ->
         CSPSubTool(
             uuid = favorite.key,
             name = "${favorite.icon} ${favorite.description}",
+            thumbnailPath = null,
             parentTool = "favorites"
         )
     }
     
+    // Convert KritaBrush to CSPSubTool for UI compatibility
+    val kritaBrushSubTools = kritaBrushes.map { brush ->
+        CSPSubTool(
+            uuid = brush.name,
+            name = "${brush.icon} ${brush.displayName}",
+            thumbnailPath = null,
+            parentTool = "krita_brushes"
+        )
+    }
+    
+    // Group Krita brushes by category for organized display
+    val kritaBrushCategories = kritaBrushes.groupBy { it.category }
+    
+    // Create tool structure organized by brush categories
+    val kritaToolsByCategory = kritaBrushCategories.map { (category, brushes) ->
+        CSPTool(
+            id = "krita_${category.lowercase()}",
+            name = when (category) {
+                "Pencils" -> "✏️ Pencils (${brushes.size})"
+                "Ink" -> "🖊️ Ink Pens (${brushes.size})"
+                "Paint" -> "🎨 Paint Brushes (${brushes.size})"
+                "Watercolor" -> "💧 Watercolor (${brushes.size})"
+                "Airbrush" -> "💨 Airbrush (${brushes.size})"
+                "Basic" -> "🖌️ Basic Brushes (${brushes.size})"
+                "Digital" -> "💻 Digital (${brushes.size})"
+                "Erasers" -> "🧽 Erasers (${brushes.size})"
+                "Effects" -> "✨ Effects (${brushes.size})"
+                else -> "📁 $category (${brushes.size})"
+            },
+            icon = when (category) {
+                "Pencils" -> "✏️"
+                "Ink" -> "🖊️" 
+                "Paint" -> "🎨"
+                "Watercolor" -> "💧"
+                "Airbrush" -> "💨"
+                "Basic" -> "🖌️"
+                "Digital" -> "💻"
+                "Erasers" -> "🧽"
+                "Effects" -> "✨"
+                else -> "📁"
+            },
+            shortcut = "B",
+            subTools = brushes.map { brush ->
+                CSPSubTool(
+                    uuid = brush.name,
+                    name = "${brush.icon} ${brush.displayName}",
+                    thumbnailPath = null,
+                    parentTool = "krita_${category.lowercase()}"
+                )
+            }
+        )
+    }
+    
+    // Dynamic tool structure based on detected app
+    val kritaTools = if (kritaToolsByCategory.isNotEmpty()) {
+        kritaToolsByCategory
+    } else {
+        // Fallback loading state
+        listOf(
+            CSPTool(
+                id = "krita_loading",
+                name = "🎨 Loading Krita...",
+                icon = "🖌️",
+                shortcut = "B",
+                subTools = listOf(
+                    CSPSubTool("loading1", "🖌️ Parsing database...", null, "krita_loading"),
+                    CSPSubTool("loading2", "📁 Loading 276 brushes...", null, "krita_loading")
+                )
+            )
+        )
+    }.plus(
+        // Add individual tool shortcuts
+        listOf(
+            CSPTool(
+                id = "krita_tools",
+                name = "🔧 Quick Tools",
+                icon = "🔧",
+                shortcut = "Tools",
+                subTools = listOf(
+                    CSPSubTool("tool_pencil", "✏️ Pencil Tool (N)", null, "krita_tools"),
+                    CSPSubTool("tool_eraser", "🧽 Eraser Tool (E)", null, "krita_tools"),
+                    CSPSubTool("tool_select", "⬚ Select Tool (Cmd+R)", null, "krita_tools"),
+                    CSPSubTool("tool_pan", "🖐️ Hand Tool (H)", null, "krita_tools"),
+                    CSPSubTool("tool_airbrush", "💨 Airbrush (A)", null, "krita_tools")
+                )
+            )
+        )
+    )
+
     // CSP Tool structure matching your actual CSP interface
     val cspTools = listOf(
         CSPTool(
@@ -102,11 +200,18 @@ fun TourBoxControlLayout(
             subTools = dynamicFavorites.ifEmpty {
                 // Default loading state
                 (1..12).map { i ->
-                    CSPSubTool("F$i", "Loading F$i...", parentTool = "favorites")
+                    CSPSubTool("F$i", "Loading F$i...", null, "favorites")
                 }
             }
         )
     )
+    
+    // DYNAMIC tool set based on server data
+    val currentTools = when (detectedApp?.app) {
+        "krita" -> kritaTools  // Use the properly formatted kritaTools with counts and icons
+        "clip_studio_paint" -> cspTools
+        else -> cspTools // Default to CSP tools
+    }
     
     Card(
         modifier = modifier
@@ -118,11 +223,42 @@ fun TourBoxControlLayout(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Text(
-                text = "🎮 TourBox Controls",
-                style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.Bold
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "🎮 TourBox Controls",
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Bold
+                )
+                
+                // App Detection Indicator
+                detectedApp?.let { app ->
+                    Card(
+                        colors = CardDefaults.cardColors(
+                            containerColor = when (app.app) {
+                                "krita" -> Color(0xFF3DAEE9) // Krita blue
+                                "clip_studio_paint" -> Color(0xFFFF6B35) // CSP orange
+                                else -> MaterialTheme.colorScheme.secondary
+                            }
+                        ),
+                        modifier = Modifier.padding(start = 8.dp)
+                    ) {
+                        Text(
+                            text = when (app.app) {
+                                "krita" -> "🎨 Krita"
+                                "clip_studio_paint" -> "🖼️ CSP"
+                                else -> "❓ ${app.displayName}"
+                            },
+                            style = MaterialTheme.typography.labelMedium,
+                            color = Color.White,
+                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                        )
+                    }
+                }
+            }
             
             if (!isConnected) {
                 Text(
@@ -290,11 +426,11 @@ fun TourBoxControlLayout(
                         )
                         
                         ToolButton(
-                            text = "✋\nPAN",
+                            text = "🔄\nSWIPE\nMODE",
                             enabled = isConnected,
                             onClick = {
                                 haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
-                                webSocketClient.switchTool("pan")
+                                showSwipeMode = true
                             },
                             modifier = Modifier.weight(1f)
                         )
@@ -405,17 +541,192 @@ fun TourBoxControlLayout(
         }
     }
     
-    // Tool Palette Dialog
+    // Tool Palette Dialog - Uses dynamic tool set
     ToolPaletteDialog(
         isVisible = showToolPalette,
-        tools = cspTools,
-        onDismiss = { showToolPalette = false },
+        tools = currentTools,
+        selectedToolCategory = selectedToolCategory,
+        onDismiss = { 
+            showToolPalette = false
+            selectedToolCategory = null  // Reset to main menu when dialog closes
+        },
         onToolSelected = { tool, subTool ->
             // Handle tool/sub-tool selection
             haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
         },
+        onToolCategoryChanged = { newCategory ->
+            selectedToolCategory = newCategory
+        },
         webSocketClient = webSocketClient
     )
+    
+    // Swipe Mode Dialog - Full-screen trackpad experience!
+    if (showSwipeMode) {
+        SwipeModeDialog(
+            onDismiss = { showSwipeMode = false },
+            webSocketClient = webSocketClient,
+            isConnected = isConnected
+        )
+    }
+}
+
+@Composable
+fun SwipeModeDialog(
+    onDismiss: () -> Unit,
+    webSocketClient: ArtRemoteWebSocketClient,
+    isConnected: Boolean
+) {
+    val haptic = LocalHapticFeedback.current
+    
+    // Full-screen dialog
+    Dialog(
+        onDismissRequest = onDismiss,
+        properties = DialogProperties(usePlatformDefaultWidth = false)
+    ) {
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp)
+            ) {
+                // Header with close button
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "🔄 Swipe Mode",
+                        style = MaterialTheme.typography.headlineMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                    
+                    Button(
+                        onClick = onDismiss
+                    ) {
+                        Text("✕ Close")
+                    }
+                }
+                
+                Spacer(modifier = Modifier.height(16.dp))
+                
+                // Instructions
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer
+                    )
+                ) {
+                    Text(
+                        text = "📱 Swipe anywhere below to pan the canvas!\n🎯 Use your thumb like a trackpad",
+                        modifier = Modifier.padding(16.dp),
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                }
+                
+                Spacer(modifier = Modifier.height(16.dp))
+                
+                // Main trackpad area
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f)
+                        .pointerInput(Unit) {
+                            detectDragGestures(
+                                onDragStart = { offset ->
+                                    haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                },
+                                onDrag = { change, dragAmount ->
+                                    if (isConnected) {
+                                        val panX = dragAmount.x / 6f  // Smooth sensitivity
+                                        val panY = dragAmount.y / 6f
+                                        
+                                        if (abs(panX) > 2 || abs(panY) > 2) {
+                                            webSocketClient.sendAction("trackpad_pan", mapOf(
+                                                "deltaX" to panX,
+                                                "deltaY" to panY
+                                            ))
+                                        }
+                                    }
+                                },
+                                onDragEnd = {
+                                    haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                }
+                            )
+                        },
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant
+                    )
+                ) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "🎨 TRACKPAD AREA\n\nSwipe to pan canvas",
+                            textAlign = TextAlign.Center,
+                            style = MaterialTheme.typography.headlineMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+                
+                Spacer(modifier = Modifier.height(16.dp))
+                
+                // Favorites docker at bottom
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.tertiaryContainer
+                    )
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp)
+                    ) {
+                        Text(
+                            text = "⭐ Quick Favorites",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.onTertiaryContainer
+                        )
+                        
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        // Quick tool buttons
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceEvenly
+                        ) {
+                            listOf(
+                                "🖌️ Brush" to "brush",
+                                "✏️ Pencil" to "pencil", 
+                                "🧽 Eraser" to "eraser",
+                                "👁️ Pick" to "eyedropper"
+                            ).forEach { (label, tool) ->
+                                Button(
+                                    onClick = {
+                                        haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                                        webSocketClient.switchTool(tool)
+                                    },
+                                    enabled = isConnected,
+                                    modifier = Modifier.weight(1f)
+                                ) {
+                                    Text(
+                                        text = label,
+                                        fontSize = 12.sp,
+                                        textAlign = TextAlign.Center
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @Composable

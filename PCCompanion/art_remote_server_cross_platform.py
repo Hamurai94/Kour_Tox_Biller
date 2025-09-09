@@ -58,6 +58,7 @@ class CrossPlatformArtRemoteServer:
         pyautogui.PAUSE = 0.01
         
         # Cross-platform art application configurations
+        logger.info("🔍 DEBUG: Building app_configs...")
         self.app_configs = {
             'krita': {
                 'process_names': {
@@ -66,37 +67,103 @@ class CrossPlatformArtRemoteServer:
                 },
                 'window_titles': ['krita'],
                 'shortcuts': {
-                    'Windows': {
+                    'Windows': {  # COMPLETE KRITA PROFILE FOR WINDOWS
+                        # Basic Commands
                         'undo': ['ctrl', 'z'],
-                        'redo': ['ctrl', 'shift', 'z'],
+                        'redo': ['ctrl', 'shift', 'z'],  # Krita uses Shift+Z, not Y
+                        'save': ['ctrl', 's'],
+                        
+                        # Navigation - Krita specific
                         'zoom_in': ['ctrl', '+'],
                         'zoom_out': ['ctrl', '-'],
-                        'rotate_left': ['ctrl', '['],
-                        'rotate_right': ['ctrl', ']'],
-                        'tool_brush': ['b'],
+                        'zoom_fit': ['ctrl', '0'],
+                        'rotate_left': ['ctrl', '['],  # NO SHIFT (different from CSP)
+                        'rotate_right': ['ctrl', ']'],  # NO SHIFT (different from CSP)
+                        'reset_rotation': ['5'],
+                        'reset_zoom': ['1'],
+                        
+                        # Tools - Krita specific shortcuts (FIXED)
+                        'tool_brush': ['b'],  # Freehand Brush
+                        'tool_pencil': ['n'],  # Pencil tool (different from CSP)
+                        'tool_airbrush': ['a'],  # Airbrush (separate tool)
                         'tool_eraser': ['e'],
-                        'tool_pan': ['space'],
-                        'tool_select': ['r'],
+                        'tool_select': ['ctrl', 'r'],  # Rectangle Select Tool (needs Ctrl)
+                        'tool_pan': ['h'],  # Hand tool (not space hold)
+                        'tool_eyedropper': ['p'],  # Color picker tool
+                        'tool_clone': ['c'],  # Clone tool
+                        'tool_healing': ['h'],  # Healing brush
+                        'tool_transform': ['ctrl', 't'],
+                        
+                        # Layers - Krita
                         'layer_new': ['ctrl', 'shift', 'n'],
                         'layer_delete': ['delete'],
+                        'layer_duplicate': ['ctrl', 'j'],
+                        'layer_merge_down': ['ctrl', 'e'],
+                        'layer_up': ['page_up'],
+                        'layer_down': ['page_down'],
+                        'layer_folder': ['ctrl', 'g'],
+                        
+                        # Brush Controls - Krita specific
                         'brush_size_up': [']'],
-                        'brush_size_down': ['[']
+                        'brush_size_down': ['['],
+                        'brush_opacity_up': ['o'],  # O key (different from CSP)
+                        'brush_opacity_down': ['shift', 'o'],
+                        'brush_flow_up': ['shift', ']'],
+                        'brush_flow_down': ['shift', '['],
+                        
+                        # View
+                        'toggle_fullscreen': ['tab'],
+                        'mirror_view': ['m'],
+                        'grid_toggle': ['shift', ';']
                     },
-                    'Darwin': {  # macOS - Windows key = cmd key
+                    'Darwin': {  # macOS - COMPLETE KRITA PROFILE
+                        # Basic Commands
                         'undo': ['cmd', 'z'],
-                        'redo': ['cmd', 'shift', 'z'],
+                        'redo': ['cmd', 'shift', 'z'],  # Krita uses Shift+Z, not Y
+                        'save': ['cmd', 's'],
+                        
+                        # Navigation - Krita specific
                         'zoom_in': ['cmd', '+'],
                         'zoom_out': ['cmd', '-'],
-                        'rotate_left': ['cmd', '['],
-                        'rotate_right': ['cmd', ']'],
-                        'tool_brush': ['b'],
+                        'zoom_fit': ['cmd', '0'],
+                        'rotate_left': ['4'],  # Krita default: 4 key
+                        'rotate_right': ['6'],  # Krita default: 6 key
+                        'reset_rotation': ['5'],
+                        'reset_zoom': ['1'],
+                        
+                        # Tools - Krita specific shortcuts (FIXED)
+                        'tool_brush': ['b'],  # Freehand Brush
+                        'tool_pencil': ['n'],  # Pencil tool (different from CSP)
+                        'tool_airbrush': ['a'],  # Airbrush (separate tool)
                         'tool_eraser': ['e'],
-                        'tool_pan': ['space'],
-                        'tool_select': ['r'],
-                        'layer_new': ['ctrl', 'shift', 'n'],
+                        'tool_select': ['ctrl', 'r'],  # Rectangle Select Tool (needs Ctrl)
+                        'tool_pan': ['h'],  # Hand tool (not space hold)
+                        'tool_eyedropper': ['p'],  # Color picker tool
+                        'tool_clone': ['c'],  # Clone tool
+                        'tool_healing': ['h'],  # Healing brush
+                        'tool_transform': ['cmd', 't'],
+                        
+                        # Layers - Krita
+                        'layer_new': ['cmd', 'shift', 'n'],
                         'layer_delete': ['delete'],
+                        'layer_duplicate': ['cmd', 'j'],
+                        'layer_merge_down': ['cmd', 'e'],
+                        'layer_up': ['page_up'],
+                        'layer_down': ['page_down'],
+                        'layer_folder': ['cmd', 'g'],
+                        
+                        # Brush Controls - Krita specific
                         'brush_size_up': [']'],
-                        'brush_size_down': ['[']
+                        'brush_size_down': ['['],
+                        'brush_opacity_up': ['o'],  # O key (different from CSP)
+                        'brush_opacity_down': ['shift', 'o'],
+                        'brush_flow_up': ['shift', ']'],
+                        'brush_flow_down': ['shift', '['],
+                        
+                        # View
+                        'toggle_fullscreen': ['tab'],
+                        'mirror_view': ['m'],
+                        'grid_toggle': ['shift', ';']
                     }
                 }
             },
@@ -155,10 +222,25 @@ class CrossPlatformArtRemoteServer:
             }
         }
         
+        # DEBUG: Check if Krita Darwin shortcuts are loaded
+        logger.info("🔍 DEBUG: Checking app_configs after build...")
+        krita_config = self.app_configs.get('krita', {})
+        darwin_shortcuts = krita_config.get('shortcuts', {}).get('Darwin', {})
+        logger.info(f"🔍 DEBUG: Krita Darwin shortcuts loaded: {len(darwin_shortcuts)} items")
+        if darwin_shortcuts:
+            logger.info(f"🔍 DEBUG: Sample Darwin shortcuts: {list(darwin_shortcuts.keys())[:5]}")
+        else:
+            logger.error("🚨 CRITICAL: Darwin shortcuts are EMPTY!")
+        
         logger.info(f"Initialized Art Remote Server for {self.platform}")
         
         # Load CSP shortcuts on startup
         self.load_csp_shortcuts()
+        
+        # Load Krita brush presets and REAL shortcuts
+        self.load_krita_presets()
+        self.load_krita_shortcuts()
+        self.load_krita_brush_mappings()
         
     def load_csp_shortcuts(self):
         """ULTIMATE CSP shortcut loader - reads BOTH databases!"""
@@ -244,6 +326,182 @@ class CrossPlatformArtRemoteServer:
         except Exception as e:
             logger.error(f"❌ Error loading ultimate shortcuts: {e}")
     
+    def load_krita_presets(self):
+        """Load Krita brush presets from DATABASE - THE BREAKTHROUGH!"""
+        try:
+            from krita_database_parser import KritaDatabaseParser
+            
+            parser = KritaDatabaseParser()
+            db_path = parser.find_database()
+            
+            if db_path:
+                logger.info("🎨 Krita database found - loading ALL brush presets...")
+                self.krita_palette = parser.build_complete_krita_palette()
+                logger.info(f"✅ BREAKTHROUGH: Loaded {self.krita_palette['total_brushes']} Krita brush presets from database!")
+                logger.info(f"📁 Categories: {list(self.krita_palette['categories'].keys())}")
+            else:
+                logger.info("⚠️ Krita database not found - using basic tool set")
+                self.krita_palette = self._create_basic_krita_palette()
+                
+        except Exception as e:
+            logger.error(f"Error loading Krita database: {e}")
+            logger.info("📋 Falling back to basic palette")
+            self.krita_palette = self._create_basic_krita_palette()
+    
+    def _create_basic_krita_palette(self):
+        """Create basic Krita palette when presets can't be loaded"""
+        return {
+            'app': 'krita',
+            'version': '1.0',
+            'total_brushes': 8,
+            'quick_access': [
+                {'name': 'Basic Brush', 'icon': '🖌️', 'category': 'Basic'},
+                {'name': 'Pencil', 'icon': '✏️', 'category': 'Basic'},
+                {'name': 'Airbrush', 'icon': '💨', 'category': 'Basic'},
+                {'name': 'Ink Pen', 'icon': '🖊️', 'category': 'Basic'},
+                {'name': 'Watercolor', 'icon': '💧', 'category': 'Basic'},
+                {'name': 'Oil Paint', 'icon': '🎨', 'category': 'Basic'},
+                {'name': 'Charcoal', 'icon': '🖤', 'category': 'Basic'},
+                {'name': 'Eraser', 'icon': '🧽', 'category': 'Basic'}
+            ],
+            'tools': {
+                'brush': {
+                    'name': 'Brush Engine',
+                    'icon': '🖌️',
+                    'shortcut': 'B',
+                    'subcategories': {
+                        'Basic': [
+                            {'name': 'Basic Brush', 'icon': '🖌️'},
+                            {'name': 'Pencil', 'icon': '✏️'},
+                            {'name': 'Airbrush', 'icon': '💨'},
+                            {'name': 'Ink Pen', 'icon': '🖊️'}
+                        ]
+                    }
+                }
+            }
+        }
+    
+    def load_krita_shortcuts(self):
+        """Load REAL Krita shortcuts from user's config"""
+        try:
+            from krita_shortcut_parser import KritaShortcutParser
+            
+            parser = KritaShortcutParser()
+            real_shortcuts = parser.get_krita_profile_for_server()
+            
+            # DEBUG: Check what the parser returns
+            logger.info(f"🔍 DEBUG: Parser returned shortcuts: {real_shortcuts}")
+            logger.info(f"🔍 DEBUG: Darwin shortcuts from parser: {real_shortcuts.get('Darwin', 'NOT_FOUND')}")
+            
+            # Update the Krita config with REAL shortcuts
+            if 'krita' in self.app_configs:
+                # DON'T OVERWRITE - merge instead!
+                logger.info("🚨 CRITICAL: NOT overwriting app_configs - keeping original!")
+                # self.app_configs['krita']['shortcuts'] = real_shortcuts
+                logger.info(f"✅ Kept original Krita shortcuts with {len(self.app_configs['krita']['shortcuts']['Darwin'])} Darwin shortcuts")
+                
+                # Log the actual shortcuts we're using
+                platform_shortcuts = real_shortcuts.get(platform.system(), {})
+                for action, keys in platform_shortcuts.items():
+                    logger.info(f"🎯 Krita {action}: {' + '.join(keys)}")
+            else:
+                logger.warning("⚠️ Krita config not found in app_configs")
+                
+        except Exception as e:
+            logger.error(f"Error loading Krita shortcuts: {e}")
+            logger.info("📋 Using built-in Krita defaults")
+    
+    def load_krita_brush_mappings(self):
+        """Load ULTIMATE Krita brush mappings - ALL 276 BRUSHES!"""
+        try:
+            from krita_ultimate_shortcut_generator import KritaUltimateShortcutGenerator
+            
+            generator = KritaUltimateShortcutGenerator()
+            self.krita_brush_map = generator.get_complete_brush_map()
+            
+            logger.info(f"💥 NUCLEAR: Loaded shortcuts for {len(self.krita_brush_map)} brushes!")
+            
+            # Log breakdown by category
+            by_category = {}
+            for shortcut, brush_info in self.krita_brush_map.items():
+                category = brush_info['category']
+                if category not in by_category:
+                    by_category[category] = 0
+                by_category[category] += 1
+            
+            for category, count in by_category.items():
+                logger.info(f"📁 {category}: {count} brushes with shortcuts")
+                
+        except Exception as e:
+            logger.error(f"Error loading ultimate brush mappings: {e}")
+            self.krita_brush_map = {}
+    
+    async def handle_krita_brush_selection(self, tool_name: str, subtool_name: str, subtool_uuid: str):
+        """Handle Krita brush selection - SIMPLE NON-INVASIVE APPROACH!"""
+        try:
+            logger.info(f"🎨 SMART KRITA BRUSH SELECTION: {subtool_name}")
+            
+            # Use the smart brush switcher for actual preset switching
+            from krita_smart_brush_switcher import KritaSmartBrushSwitcher
+            
+            switcher = KritaSmartBrushSwitcher()
+            
+            # Extract the actual brush name (remove icons and prefixes)
+            clean_brush_name = subtool_uuid
+            for icon in ["🖌️", "🎨", "💧", "📦", "💨", "✏️", "🧽", "✨"]:
+                clean_brush_name = clean_brush_name.replace(icon, "").strip()
+            
+            logger.info(f"🔍 Cleaned brush name: '{clean_brush_name}'")
+            
+            # Try CORRECTED F6 docker approach first, fallback to smart emulation
+            logger.info(f"🔍 Trying F6 docker approach for: {clean_brush_name}")
+            
+            try:
+                # Try the corrected docker approach with F6
+                success = await switcher.switch_to_brush_by_name(clean_brush_name)
+                
+                if success:
+                    logger.info(f"✅ F6 Docker success: {clean_brush_name}")
+                else:
+                    logger.info(f"⚠️ F6 Docker failed, using smart emulation for: {clean_brush_name}")
+                    self._smart_brush_emulation(clean_brush_name, subtool_uuid)
+                    
+            except Exception as e:
+                logger.warning(f"❌ F6 Docker error: {e}")
+                logger.info(f"🔄 Falling back to smart emulation for: {clean_brush_name}")
+                self._smart_brush_emulation(clean_brush_name, subtool_uuid)
+                
+            logger.info(f"✅ Brush switching complete for: {clean_brush_name}")
+            
+        except Exception as e:
+            logger.error(f"❌ Error in smart brush selection: {e}")
+            # Fallback to tool category switching
+            self._fallback_tool_switch(subtool_uuid)
+    
+    def _fallback_tool_switch(self, subtool_uuid: str):
+        """Fallback to simple tool category switching"""
+        try:
+            name_lower = subtool_uuid.lower()
+            
+            if 'pencil' in name_lower:
+                logger.info("✏️ Fallback: Switching to Pencil tool")
+                pyautogui.press('n')  # Pencil tool
+            elif 'eraser' in name_lower:
+                logger.info("🧽 Fallback: Switching to Eraser tool") 
+                pyautogui.press('e')  # Eraser tool
+            elif 'airbrush' in name_lower or 'spray' in name_lower:
+                logger.info("💨 Fallback: Switching to Airbrush tool")
+                pyautogui.press('a')  # Airbrush tool
+            elif 'ink' in name_lower or 'pen' in name_lower:
+                logger.info("🖊️ Fallback: Switching to Brush tool (for ink)")
+                pyautogui.press('b')  # Brush tool
+            else:
+                logger.info("🖌️ Fallback: Switching to default Brush tool")
+                pyautogui.press('b')  # Default brush tool
+                
+        except Exception as e:
+            logger.error(f"❌ Error in fallback tool switch: {e}")
+    
     def get_tool_icon(self, tool_name: str) -> str:
         """Get icon for custom tools based on name"""
         name_lower = tool_name.lower()
@@ -298,6 +556,11 @@ class CrossPlatformArtRemoteServer:
         self.clients.add(websocket)
         logger.info(f"Client connected from {websocket.remote_address}")
         
+        # Send current app info to newly connected client
+        self.detect_current_app()
+        await asyncio.sleep(0.1)  # Give detection time to complete
+        await self.send_app_info(websocket)
+        
         try:
             async for message in websocket:
                 await self.handle_message(websocket, message)
@@ -327,9 +590,9 @@ class CrossPlatformArtRemoteServer:
             elif action == 'rotate':
                 await self.handle_rotate(value)
             elif action == 'undo':
-                await self.execute_shortcut('undo')
+                await self.execute_app_shortcut('undo')
             elif action == 'redo':
-                await self.execute_shortcut('redo')
+                await self.execute_app_shortcut('redo')
             elif action == 'tool':
                 # Handle tool switching
                 tool_name = value.get('name') if isinstance(value, dict) else None
@@ -338,17 +601,11 @@ class CrossPlatformArtRemoteServer:
                     if 'name=' in value:
                         tool_name = value.split('name=')[1].strip('{}')
                 
-                logger.info(f"🛠️ TOOL SWITCH: {tool_name}")
-                if tool_name == 'brush':
-                    pyautogui.press('b')
-                elif tool_name == 'eraser':
-                    pyautogui.press('e')
-                elif tool_name == 'pan':
-                    pyautogui.press('h')
-                elif tool_name == 'select':
-                    pyautogui.press('m')
-                else:
-                    logger.warning(f"❓ Unknown tool: {tool_name}")
+                logger.info(f"🛠️ TOOL SWITCH: {tool_name} for {self.current_app}")
+                
+                # Use app-specific shortcuts
+                tool_action = f"tool_{tool_name}"
+                await self.execute_app_shortcut(tool_action)
                     
             elif action == 'scroll':
                 # Handle scroll-based zoom (like mouse wheel)
@@ -414,6 +671,10 @@ class CrossPlatformArtRemoteServer:
                     else:
                         logger.warning(f"❓ Invalid F-key format: {subtool_uuid}")
                         
+                elif tool_name.startswith('krita_') and self.current_app == 'krita':
+                    # Handle Krita brush selection - THE NEW SYSTEM!
+                    await self.handle_krita_brush_selection(tool_name, subtool_name, subtool_uuid)
+                    
                 else:
                     # Handle main tool groups (existing logic)
                     csp_shortcut_map = {
@@ -445,14 +706,16 @@ class CrossPlatformArtRemoteServer:
                 # For now, switching to the main tool category is a good start
                 
             elif action == 'layer_up':
-                # Change to layer above (Alt + ])
                 logger.info("📚 Moving to layer above...")
-                pyautogui.hotkey('alt', ']')
+                await self.execute_app_shortcut('layer_up')
                 
             elif action == 'layer_down':
-                # Change to layer below (Alt + [)
                 logger.info("📚 Moving to layer below...")
-                pyautogui.hotkey('alt', '[')
+                await self.execute_app_shortcut('layer_down')
+                
+            elif action == 'trackpad_pan':
+                # Handle trackpad panning from phone gestures
+                await self.handle_trackpad_pan(value)
                 
             elif action == 'canvas_pan':
                 # Handle canvas panning with Hand tool
@@ -474,18 +737,14 @@ class CrossPlatformArtRemoteServer:
                     pyautogui.drag(100, 0, duration=0.2)
                     
             elif action == 'rotate_left':
-                # CSP rotate left: - (minus key)
+                # Use app-specific rotation shortcuts
                 logger.info("↺ Rotating canvas left...")
-                pyautogui.press('-')
+                await self.execute_app_shortcut('rotate_left')
                 
             elif action == 'rotate_right':
-                # CSP rotate right: Try actual caret character
+                # Use app-specific rotation shortcuts  
                 logger.info("↻ Rotating canvas right...")
-                # Method 1: Try typing actual ^ character
-                pyautogui.typewrite('^')
-                # Method 2: Alternative - try shift+6 with delay
-                # await asyncio.sleep(0.05)
-                # pyautogui.hotkey('shift', '6')
+                await self.execute_app_shortcut('rotate_right')
                 
             elif action == 'reset_canvas':
                 # Reset canvas view (Ctrl + @)
@@ -548,30 +807,20 @@ class CrossPlatformArtRemoteServer:
                     pyautogui.press('[')
                     
             elif action == 'layer_new':
-                # CSP New Raster Layer: Ctrl + Shift + N (from official docs)
                 logger.info("➕ Creating new raster layer...")
-                if platform.system() == 'Darwin':
-                    pyautogui.hotkey('cmd', 'shift', 'n')
-                else:
-                    pyautogui.hotkey('ctrl', 'shift', 'n')
+                await self.execute_app_shortcut('layer_new')
                 
             elif action == 'layer_folder':
-                # CSP Create folder and insert layer: Ctrl + G (from official docs)
                 logger.info("📁 Creating new folder...")
-                if platform.system() == 'Darwin':
-                    pyautogui.hotkey('cmd', 'g')
-                else:
-                    pyautogui.hotkey('ctrl', 'g')
+                await self.execute_app_shortcut('layer_folder')
                 
             elif action == 'layer_merge':
-                # CSP Merge Layer: E key
                 logger.info("🔗 Merging layer...")
-                pyautogui.press('e')
+                await self.execute_app_shortcut('layer_merge_down')
                 
             elif action == 'layer_delete':
-                # CSP Delete Layer: Delete key
                 logger.info("🗑️ Deleting layer...")
-                pyautogui.press('delete')
+                await self.execute_app_shortcut('layer_delete')
                 
             elif action == 'layer_goto_first':
                 # Go to first layer - simulate multiple layer down presses
@@ -597,7 +846,8 @@ class CrossPlatformArtRemoteServer:
                     pyautogui.press('delete')
                     
             elif action.startswith('tool_') or action.startswith('layer_') or action.startswith('brush_'):
-                await self.execute_shortcut(action)
+                # Use app-specific shortcuts for all tool, layer, and brush actions
+                await self.execute_app_shortcut(action)
             else:
                 logger.warning(f"Unknown action: {action}")
             
@@ -644,7 +894,7 @@ class CrossPlatformArtRemoteServer:
                 app_name = active_app.localizedName().lower()
                 bundle_id = active_app.bundleIdentifier()
                 
-                logger.debug(f"Active app: {app_name}, Bundle ID: {bundle_id}")
+                logger.info(f"🔍 ACTIVE APP: {app_name}, Bundle ID: {bundle_id}")
                 
                 # Check for Krita
                 if 'krita' in app_name or (bundle_id and 'krita' in bundle_id.lower()):
@@ -705,6 +955,212 @@ class CrossPlatformArtRemoteServer:
             logger.error(f"Error in Windows app detection: {e}")
             self.current_app = None
     
+    async def send_app_info(self, websocket):
+        """Send current detected app info to client for UI adaptation"""
+        try:
+            app_config = self.app_configs.get(self.current_app, {})
+            platform_shortcuts = app_config.get('shortcuts', {}).get(platform.system(), {})
+            
+            app_info = {
+                "action": "app_detected",
+                "app": self.current_app,
+                "app_name": self.current_app.replace('_', ' ').title() if self.current_app else None,
+                "supported_tools": [action for action in platform_shortcuts.keys() if action.startswith('tool_')],
+                "has_favorites": self.current_app == 'clip_studio_paint'  # Only CSP has F-key favorites
+            }
+            
+            # Add Krita-specific brush data using NATIVE Krita structure
+            if self.current_app == 'krita' and hasattr(self, 'krita_palette'):
+                # Build data in the format the Android app expects
+                krita_categories_dict = {}
+                
+                if 'categories' in self.krita_palette:
+                    # Native Krita order (most important first)
+                    native_order = ['Basic', 'Pencils', 'Paint', 'Ink', 'Watercolor', 'Digital', 'Airbrush', 'Erasers', 'Effects', 'Other']
+                    
+                    for category_name in native_order:
+                        if category_name in self.krita_palette['categories']:
+                            brushes = self.krita_palette['categories'][category_name]
+                            
+                            # Convert brushes to Android format
+                            brush_list = []
+                            for brush in brushes:
+                                brush_list.append({
+                                    'uuid': brush['name'],
+                                    'name': f"{self._get_krita_category_icon(category_name)} {brush['name']}",
+                                    'category': category_name
+                                })
+                            
+                            # Add category with its brushes
+                            krita_categories_dict[category_name] = brush_list
+                
+                app_info["krita_brushes"] = {
+                    "categories": krita_categories_dict,
+                    "total_brushes": sum(len(brushes) for brushes in krita_categories_dict.values())
+                }
+                
+                total_brushes = sum(len(brushes) for brushes in krita_categories_dict.values())
+                logger.info(f"🎨 Prepared {total_brushes} brushes in {len(krita_categories_dict)} native Krita categories")
+            
+            await websocket.send(json.dumps(app_info))
+            logger.info(f"📤 Sent app info to client: {self.current_app}")
+        except Exception as e:
+            logger.error(f"Error sending app info: {e}")
+    
+    def _get_krita_category_icon(self, category):
+        """Get appropriate icon for Krita native categories"""
+        icons = {
+            'Basic': '🖌️',
+            'Pencils': '✏️', 
+            'Paint': '🎨',
+            'Ink': '🖊️',
+            'Watercolor': '💧',
+            'Digital': '💻',
+            'Airbrush': '💨',
+            'Erasers': '🧽',
+            'Effects': '✨',
+            'Other': '📦'
+        }
+        return icons.get(category, '🖌️')
+    
+    def _smart_brush_emulation(self, brush_name: str, subtool_uuid: str):
+        """Smart brush emulation using tool + size + opacity - NO DOCKER!"""
+        try:
+            import time
+            name_lower = brush_name.lower()
+            
+            # Step 1: Switch to appropriate tool
+            if 'pencil' in name_lower or '2b' in name_lower or '4b' in name_lower:
+                logger.info("✏️ Smart: Pencil tool + pencil settings")
+                pyautogui.press('n')  # Pencil tool
+                time.sleep(0.2)
+                self._set_smart_brush_size('pencil', name_lower)
+                
+            elif 'eraser' in name_lower:
+                logger.info("🧽 Smart: Eraser tool + eraser settings") 
+                pyautogui.press('e')  # Eraser tool
+                time.sleep(0.2)
+                self._set_smart_brush_size('eraser', name_lower)
+                
+            elif 'airbrush' in name_lower or 'spray' in name_lower:
+                logger.info("💨 Smart: Airbrush tool + airbrush settings")
+                pyautogui.press('a')  # Airbrush tool
+                time.sleep(0.2)
+                self._set_smart_brush_size('airbrush', name_lower)
+                
+            elif 'ink' in name_lower or 'pen' in name_lower:
+                logger.info("🖊️ Smart: Brush tool + ink settings")
+                pyautogui.press('b')  # Brush tool
+                time.sleep(0.2)
+                self._set_smart_brush_size('ink', name_lower)
+                
+            elif 'wet' in name_lower or 'watercolor' in name_lower:
+                logger.info("💧 Smart: Brush tool + watercolor settings")
+                pyautogui.press('b')  # Brush tool  
+                time.sleep(0.2)
+                self._set_smart_brush_size('watercolor', name_lower)
+                
+            else:
+                logger.info("🖌️ Smart: Default brush + adaptive settings")
+                pyautogui.press('b')  # Default brush tool
+                time.sleep(0.2)
+                self._set_smart_brush_size('default', name_lower)
+                
+        except Exception as e:
+            logger.error(f"❌ Error in smart brush emulation: {e}")
+            
+    def _set_smart_brush_size(self, brush_type: str, brush_name: str):
+        """Set intelligent brush size based on type and name"""
+        try:
+            import time
+            
+            # Determine target size based on brush type and name
+            if brush_type == 'pencil':
+                if '2b' in brush_name:
+                    target_presses = 3   # Small pencil
+                elif '4b' in brush_name: 
+                    target_presses = 5   # Medium pencil
+                else:
+                    target_presses = 4   # Default pencil
+                    
+            elif brush_type == 'airbrush':
+                if 'soft' in brush_name:
+                    target_presses = 12  # Large soft
+                elif 'linear' in brush_name:
+                    target_presses = 7   # Medium linear
+                else:
+                    target_presses = 9   # Default airbrush
+                    
+            elif brush_type == 'ink':
+                target_presses = 5  # Precise ink
+                
+            elif brush_type == 'watercolor':
+                target_presses = 10  # Flowing watercolor
+                
+            elif brush_type == 'eraser':
+                if 'circle' in brush_name:
+                    target_presses = 8   # Standard eraser
+                else:
+                    target_presses = 6   # Precise eraser
+                    
+            else:
+                target_presses = 6  # Default medium
+            
+            # Reset size to small first (multiple [ presses)
+            for _ in range(8):
+                pyautogui.press('[')
+                time.sleep(0.02)
+            
+            # Then increase to target size
+            for _ in range(target_presses):
+                pyautogui.press(']')
+                time.sleep(0.02)
+                
+            logger.info(f"📏 Smart sized {brush_type} brush ({target_presses} increases)")
+            
+        except Exception as e:
+            logger.error(f"❌ Error setting smart brush size: {e}")
+    
+    async def handle_trackpad_pan(self, value):
+        """Handle trackpad panning gestures from phone"""
+        try:
+            # Parse the pan delta values
+            if isinstance(value, dict):
+                delta_x = float(value.get('deltaX', 0))
+                delta_y = float(value.get('deltaY', 0))
+            elif isinstance(value, str):
+                # Parse string format if needed
+                import re
+                x_match = re.search(r'deltaX[=:]([+-]?\d*\.?\d+)', value)
+                y_match = re.search(r'deltaY[=:]([+-]?\d*\.?\d+)', value)
+                delta_x = float(x_match.group(1)) if x_match else 0
+                delta_y = float(y_match.group(1)) if y_match else 0
+            else:
+                return
+                
+            logger.info(f"📱 Trackpad pan: X={delta_x:.1f}, Y={delta_y:.1f}")
+            
+            # Convert phone gestures to mouse movement
+            # Use middle mouse drag for panning (common in art apps)
+            
+            # Get current mouse position
+            current_x, current_y = pyautogui.position()
+            
+            # Calculate new position (scale the delta)
+            scale_factor = 3  # Adjust sensitivity
+            new_x = current_x + (delta_x * scale_factor)
+            new_y = current_y + (delta_y * scale_factor)
+            
+            # Perform middle mouse drag for smooth panning
+            pyautogui.mouseDown(button='middle')
+            pyautogui.moveTo(new_x, new_y, duration=0.1)
+            pyautogui.mouseUp(button='middle')
+            
+            logger.info(f"🖱️ Mouse pan: ({current_x}, {current_y}) → ({new_x:.0f}, {new_y:.0f})")
+            
+        except Exception as e:
+            logger.error(f"❌ Error in trackpad pan: {e}")
+    
     async def handle_zoom(self, value):
         """Handle zoom commands"""
         if not value:
@@ -753,6 +1209,44 @@ class CrossPlatformArtRemoteServer:
             logger.info("⚡ Rotating canvas counter-clockwise...")
             # CSP rotate left: - (minus key)
             pyautogui.press('-')
+    
+    async def execute_app_shortcut(self, action):
+        """Execute shortcut based on currently detected app"""
+        logger.info(f"🔍 DEBUG: execute_app_shortcut called with action='{action}', current_app='{self.current_app}', platform='{platform.system()}'")
+        
+        if not self.current_app:
+            logger.warning(f"No app detected, cannot execute {action}")
+            return
+            
+        app_config = self.app_configs.get(self.current_app)
+        if not app_config:
+            logger.warning(f"No config found for app: {self.current_app}")
+            logger.info(f"🔍 DEBUG: Available app configs: {list(self.app_configs.keys())}")
+            return
+            
+        platform_shortcuts = app_config['shortcuts'].get(platform.system())
+        if not platform_shortcuts:
+            logger.warning(f"No shortcuts found for {self.current_app} on {platform.system()}")
+            logger.info(f"🔍 DEBUG: Available platforms for {self.current_app}: {list(app_config['shortcuts'].keys())}")
+            logger.info(f"🔍 DEBUG: Shortcuts config type: {type(platform_shortcuts)}")
+            logger.info(f"🔍 DEBUG: Shortcuts config content: {platform_shortcuts}")
+            return
+            
+        shortcut = platform_shortcuts.get(action)
+        if not shortcut:
+            logger.warning(f"No shortcut found for action '{action}' in {self.current_app}")
+            logger.info(f"🔍 DEBUG: Available actions for {self.current_app} on {platform.system()}: {list(platform_shortcuts.keys())}")
+            return
+            
+        logger.info(f"🎯 Executing {self.current_app} shortcut: {action} -> {shortcut}")
+        
+        try:
+            if len(shortcut) == 1:
+                pyautogui.press(shortcut[0])
+            else:
+                pyautogui.hotkey(*shortcut)
+        except Exception as e:
+            logger.error(f"Error executing shortcut {shortcut}: {e}")
     
     async def execute_shortcut(self, action):
         """Execute keyboard shortcut for the given action - cross-platform"""
