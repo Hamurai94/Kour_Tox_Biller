@@ -25,9 +25,4 @@ We just installed **276 brush shortcuts** directly into Krita's configuration:
 3. **Select any brush** - should instantly switch
 4. **Try manually**: Press `Ctrl+A` in Krita - should select "Basic circle"
 
-**Once Krita restarts, every brush selection from our app will work instantly!** 🚀
 
-## 💥 **ACHIEVEMENT:**
-**We just gave Krita the SAME instant brush access that CSP has with F-keys, but for ALL 276 brushes instead of just 12!**
-
-**This is UNPRECEDENTED in digital art software!** 🎨💪

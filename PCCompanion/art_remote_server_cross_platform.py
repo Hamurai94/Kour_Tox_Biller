@@ -19,6 +19,8 @@ import socketserver
 import os
 import sqlite3
 from pathlib import Path
+from auth import SimpleAuth, AuthenticatedConnection
+import argparse
 
 # Platform-specific imports
 if platform.system() == "Darwin":  # macOS
@@ -42,16 +44,29 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class CrossPlatformArtRemoteServer:
-    def __init__(self, host='0.0.0.0', port=8765, http_port=8080):
+    def __init__(self, host='127.0.0.1', port=8765, http_port=8080, require_auth=True):
+        # Security: Default to localhost only, not 0.0.0.0
         self.host = host
         self.port = port
         self.http_port = http_port
+        self.require_auth = require_auth
         self.clients = set()
+        self.authenticated_clients = {}  # websocket -> AuthenticatedConnection
         self.current_app = None
         self.is_running = False
         self.platform = platform.system()
         self.http_server = None
         self.csp_favorites = {}  # Store dynamic F-key assignments
+        
+        # Initialize authentication system
+        if self.require_auth:
+            self.auth = SimpleAuth()
+            logger.info("🔐 Authentication system initialized")
+            auth_info = self.auth.get_connection_info()
+            logger.info(f"🔑 Connection PIN: {auth_info['pin']}")
+        else:
+            self.auth = None
+            logger.warning("⚠️ Authentication disabled - server is open to all connections!")
         
         # Configure pyautogui
         pyautogui.FAILSAFE = True
@@ -552,9 +567,61 @@ class CrossPlatformArtRemoteServer:
         return icons.get(command, '🔧')
         
     async def register_client(self, websocket, path):
-        """Register a new client connection"""
+        """Register a new client connection with authentication"""
+        logger.info(f"Client connecting from {websocket.remote_address}")
+        
+        # Create authenticated connection wrapper
+        if self.require_auth:
+            auth_conn = AuthenticatedConnection(websocket, self.auth)
+            
+            # Send authentication challenge
+            await websocket.send(json.dumps({
+                'type': 'auth_required',
+                'message': 'Authentication required',
+                'methods': ['token', 'pin']
+            }))
+            
+            # Wait for authentication
+            auth_timeout = 30  # 30 second timeout
+            auth_successful = False
+            
+            try:
+                # Wait for auth message with timeout
+                auth_message = await asyncio.wait_for(websocket.recv(), timeout=auth_timeout)
+                auth_data = json.loads(auth_message)
+                
+                if auth_data.get('type') == 'authenticate':
+                    auth_successful = await auth_conn.authenticate(auth_data)
+                else:
+                    await websocket.send(json.dumps({
+                        'type': 'auth_response',
+                        'success': False,
+                        'message': 'Expected authentication message'
+                    }))
+                    
+            except asyncio.TimeoutError:
+                logger.warning(f"Authentication timeout for {websocket.remote_address}")
+                await websocket.send(json.dumps({
+                    'type': 'auth_response',
+                    'success': False,
+                    'message': 'Authentication timeout'
+                }))
+                return
+            except Exception as e:
+                logger.error(f"Authentication error: {e}")
+                return
+            
+            if not auth_successful:
+                logger.warning(f"Authentication failed for {websocket.remote_address}")
+                await websocket.close(code=1008, reason="Authentication failed")
+                return
+            
+            # Store authenticated connection
+            self.authenticated_clients[websocket] = auth_conn
+            
+        # Add to clients list only after authentication
         self.clients.add(websocket)
-        logger.info(f"Client connected from {websocket.remote_address}")
+        logger.info(f"✅ Client authenticated and connected from {websocket.remote_address}")
         
         # Send current app info to newly connected client
         self.detect_current_app()
@@ -566,12 +633,27 @@ class CrossPlatformArtRemoteServer:
                 await self.handle_message(websocket, message)
         except websockets.exceptions.ConnectionClosed:
             logger.info("Client disconnected")
+        except Exception as e:
+            logger.error(f"Client connection error: {e}")
         finally:
-            self.clients.remove(websocket)
+            # Clean up
+            if websocket in self.clients:
+                self.clients.remove(websocket)
+            if websocket in self.authenticated_clients:
+                del self.authenticated_clients[websocket]
     
     async def handle_message(self, websocket, message):
         """Handle incoming messages from Android app"""
         try:
+            # Check authentication if required
+            if self.require_auth and websocket not in self.authenticated_clients:
+                logger.warning("Received message from unauthenticated client")
+                await websocket.send(json.dumps({
+                    'type': 'error',
+                    'message': 'Authentication required'
+                }))
+                return
+            
             data = json.loads(message)
             logger.info(f"Received command: {data}")
             
@@ -1318,8 +1400,8 @@ class CrossPlatformArtRemoteServer:
 
 # Cross-platform GUI class
 class CrossPlatformServerGUI:
-    def __init__(self):
-        self.server = CrossPlatformArtRemoteServer()
+    def __init__(self, require_auth=True, host='127.0.0.1'):
+        self.server = CrossPlatformArtRemoteServer(host=host, require_auth=require_auth)
         self.server_thread = None
         self.platform = platform.system()
         
@@ -1365,15 +1447,39 @@ class CrossPlatformServerGUI:
         ttk.Label(main_frame, text=f"{self.server.host}:{self.server.port}").grid(
             row=3, column=1, sticky=tk.W, padx=(10, 0))
         
+        # Authentication info
+        if self.server.require_auth:
+            auth_info = self.server.auth.get_connection_info()
+            ttk.Label(main_frame, text="🔐 Connection PIN:", 
+                     font=('Arial', 10, 'bold')).grid(row=4, column=0, sticky=tk.W, pady=(10, 0))
+            pin_label = ttk.Label(main_frame, text=auth_info['pin'], 
+                                 font=('Arial', 12, 'bold'), foreground="blue")
+            pin_label.grid(row=4, column=1, sticky=tk.W, padx=(10, 0), pady=(10, 0))
+            
+            # Add copy button for token (for advanced users)
+            def copy_token():
+                self.root.clipboard_clear()
+                self.root.clipboard_append(auth_info['token'])
+                self.root.update()  # Required for clipboard to work
+                
+            ttk.Button(main_frame, text="Copy Full Token", 
+                      command=copy_token).grid(row=5, column=1, sticky=tk.W, padx=(10, 0))
+            
+            current_app_row = 6
+        else:
+            ttk.Label(main_frame, text="⚠️ No Authentication", 
+                     foreground="red").grid(row=4, column=0, columnspan=2, pady=(10, 0))
+            current_app_row = 5
+        
         # Current app
         self.app_var = tk.StringVar(value="None detected")
-        ttk.Label(main_frame, text="Current App:").grid(row=4, column=0, sticky=tk.W)
+        ttk.Label(main_frame, text="Current App:").grid(row=current_app_row, column=0, sticky=tk.W)
         self.app_label = ttk.Label(main_frame, textvariable=self.app_var)
-        self.app_label.grid(row=4, column=1, sticky=tk.W, padx=(10, 0))
+        self.app_label.grid(row=current_app_row, column=1, sticky=tk.W, padx=(10, 0))
         
         # Control buttons
         button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=5, column=0, columnspan=2, pady=(20, 0))
+        button_frame.grid(row=current_app_row+1, column=0, columnspan=2, pady=(20, 0))
         
         self.start_button = ttk.Button(button_frame, text="Start Server", 
                                       command=self.start_server)
@@ -1534,7 +1640,32 @@ def check_dependencies():
     return True
 
 if __name__ == "__main__":
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Art Remote Control Server')
+    parser.add_argument('--no-auth', action='store_true', 
+                       help='Disable authentication (INSECURE - for development only)')
+    parser.add_argument('--host', default='127.0.0.1',
+                       help='Host to bind to (default: 127.0.0.1 for security)')
+    parser.add_argument('--allow-network', action='store_true',
+                       help='Allow connections from network (sets host to 0.0.0.0)')
+    
+    args = parser.parse_args()
+    
+    # Security warnings
+    if args.no_auth:
+        print("⚠️  WARNING: Authentication disabled - server is open to all connections!")
+        print("⚠️  This should ONLY be used for development!")
+        
+    if args.allow_network:
+        args.host = '0.0.0.0'
+        print(f"⚠️  WARNING: Server will accept connections from entire network ({args.host})")
+        if args.no_auth:
+            print("⚠️  CRITICAL: Network access + no auth = MAJOR SECURITY RISK!")
+    
     print(f"🎨 Art Remote Control Server - {platform.system()} Edition")
+    print("=" * 60)
+    print(f"🔐 Authentication: {'DISABLED' if args.no_auth else 'ENABLED'}")
+    print(f"🌐 Host: {args.host}")
     print("=" * 60)
     
     # Check dependencies
@@ -1543,7 +1674,7 @@ if __name__ == "__main__":
     
     # Run the server GUI
     try:
-        gui = CrossPlatformServerGUI()
+        gui = CrossPlatformServerGUI(require_auth=not args.no_auth, host=args.host)
         gui.run()
     except Exception as e:
         print(f"Error starting server: {e}")
