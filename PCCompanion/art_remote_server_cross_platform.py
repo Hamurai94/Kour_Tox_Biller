@@ -21,6 +21,9 @@ import sqlite3
 from pathlib import Path
 from auth import SimpleAuth, AuthenticatedConnection
 import argparse
+from performance_cache import performance_monitor, performance_optimizer
+from optimized_parsers import optimized_csp_parser, optimized_krita_parser, optimized_app_detector
+from performance_optimizations import apply_performance_optimizations
 
 # Platform-specific imports
 if platform.system() == "Darwin":  # macOS
@@ -57,6 +60,9 @@ class CrossPlatformArtRemoteServer:
         self.platform = platform.system()
         self.http_server = None
         self.csp_favorites = {}  # Store dynamic F-key assignments
+        self.message_queue = asyncio.Queue(maxsize=100)  # Async message queue
+        self._last_app_detection = 0
+        self._app_detection_interval = 2.0  # Rate limit app detection
         
         # Initialize authentication system
         if self.require_auth:
@@ -257,110 +263,47 @@ class CrossPlatformArtRemoteServer:
         self.load_krita_shortcuts()
         self.load_krita_brush_mappings()
         
+    @performance_monitor
     def load_csp_shortcuts(self):
-        """ULTIMATE CSP shortcut loader - reads BOTH databases!"""
+        """OPTIMIZED CSP shortcut loader with intelligent caching"""
         try:
-            # Database paths - cross-platform
-            if platform.system() == 'Darwin':
-                menu_db = Path.home() / "Library/CELSYS/CLIPStudioPaintVer1_5_0/Shortcut/default.khc"
-                tool_db = Path.home() / "Library/CELSYS/CLIPStudioPaintVer1_5_0/Tool/EditImageTool.todb"
-            else:  # Windows
-                # Windows CSP paths
-                csp_base = Path.home() / "AppData/Roaming/CELSys/CLIPStudioPaintVer1_5_0"
-                menu_db = csp_base / "Shortcut/default.khc"
-                tool_db = csp_base / "Tool/EditImageTool.todb"
+            logger.info("🚀 Loading CSP shortcuts (optimized)...")
             
-            ultimate_shortcuts = {}
+            # Use optimized parser with caching
+            shortcuts_data = optimized_csp_parser.get_complete_shortcuts()
             
-            # Step 1: Parse menu shortcuts
-            if menu_db.exists():
-                logger.info("📋 Loading menu shortcuts...")
-                conn = sqlite3.connect(str(menu_db))
-                cursor = conn.cursor()
-                
-                cursor.execute("""
-                    SELECT menucommandtype, menucommand, shortcut, modifier 
-                    FROM shortcutmenu 
-                    WHERE shortcut LIKE 'F%' AND shortcut IS NOT NULL
-                """)
-                
-                for row in cursor.fetchall():
-                    command_type, command, key, modifier = row
-                    
-                    ultimate_shortcuts[key] = {
-                        'command': command,
-                        'description': self.get_command_description(command),
-                        'icon': self.get_command_icon(command),
-                        'source': 'menu',
-                        'modifier': modifier
-                    }
-                    
-                    logger.info(f"📋 {key}: {ultimate_shortcuts[key]['icon']} {ultimate_shortcuts[key]['description']}")
-                
-                conn.close()
+            self.csp_shortcuts = shortcuts_data['shortcuts']
+            logger.info(f"✅ Loaded {shortcuts_data['total_count']} CSP shortcuts "
+                       f"({shortcuts_data['menu_count']} menu + {shortcuts_data['tool_count']} tools)")
             
-            # Step 2: Parse custom tool shortcuts - THE BREAKTHROUGH!
-            if tool_db.exists():
-                logger.info("🎨 Loading custom tool shortcuts...")
-                conn = sqlite3.connect(str(tool_db))
-                cursor = conn.cursor()
-                
-                # F-key encoding: NodeShortCutKey = 36 + F_number
-                f_key_offset = 36
-                
-                cursor.execute("""
-                    SELECT NodeName, NodeShortCutKey 
-                    FROM Node 
-                    WHERE NodeShortCutKey BETWEEN ? AND ?
-                """, (f_key_offset + 1, f_key_offset + 12))
-                
-                for row in cursor.fetchall():
-                    node_name, shortcut_key = row
-                    
-                    # Calculate F-key number
-                    f_number = shortcut_key - f_key_offset
-                    f_key = f"F{f_number}"
-                    
-                    ultimate_shortcuts[f_key] = {
-                        'command': f'custom_tool_{shortcut_key}',
-                        'description': node_name,
-                        'icon': self.get_tool_icon(node_name),
-                        'source': 'tool',
-                        'tool_name': node_name,
-                        'shortcut_key': shortcut_key
-                    }
-                    
-                    logger.info(f"🎨 {f_key}: {ultimate_shortcuts[f_key]['icon']} {node_name}")
-                
-                conn.close()
-            
-            self.csp_favorites = ultimate_shortcuts
-            
-            logger.info(f"🚀 ULTIMATE LOADING COMPLETE: {len(ultimate_shortcuts)} F-key assignments!")
-                
         except Exception as e:
-            logger.error(f"❌ Error loading ultimate shortcuts: {e}")
+            logger.error(f"❌ Error loading CSP shortcuts: {e}")
+            self.csp_shortcuts = {}
+            return False
     
+    @performance_monitor
     def load_krita_presets(self):
-        """Load Krita brush presets from DATABASE - THE BREAKTHROUGH!"""
+        """OPTIMIZED Krita brush preset loader with intelligent caching"""
         try:
-            from krita_database_parser import KritaDatabaseParser
+            logger.info("🚀 Loading Krita presets (optimized)...")
             
-            parser = KritaDatabaseParser()
-            db_path = parser.find_database()
+            # Use optimized parser with caching
+            brush_data = optimized_krita_parser.load_all_brushes()
             
-            if db_path:
-                logger.info("🎨 Krita database found - loading ALL brush presets...")
-                self.krita_palette = parser.build_complete_krita_palette()
-                logger.info(f"✅ BREAKTHROUGH: Loaded {self.krita_palette['total_brushes']} Krita brush presets from database!")
-                logger.info(f"📁 Categories: {list(self.krita_palette['categories'].keys())}")
+            if brush_data['total_count'] > 0:
+                self.krita_palette = {
+                    'brushes': brush_data['brushes'],
+                    'categories': brush_data['categories'],
+                    'total_brushes': brush_data['total_count'],
+                    'category_count': brush_data['category_count']
+                }
+                logger.info(f"✅ Loaded {brush_data['total_count']} Krita brushes in {brush_data['category_count']} categories")
             else:
-                logger.info("⚠️ Krita database not found - using basic tool set")
+                logger.info("⚠️ No Krita brushes found - using basic palette")
                 self.krita_palette = self._create_basic_krita_palette()
                 
         except Exception as e:
-            logger.error(f"Error loading Krita database: {e}")
-            logger.info("📋 Falling back to basic palette")
+            logger.error(f"Error loading Krita presets: {e}")
             self.krita_palette = self._create_basic_krita_palette()
     
     def _create_basic_krita_palette(self):
@@ -951,18 +894,22 @@ class CrossPlatformArtRemoteServer:
             except:
                 pass  # Connection might be dead
     
+    @performance_monitor
     def detect_current_app(self):
-        """Detect which art application is currently active - cross-platform"""
+        """OPTIMIZED app detection with rate limiting and caching"""
         try:
-            if self.platform == "Darwin":  # macOS
-                self._detect_current_app_macos()
-            elif self.platform == "Windows":
-                self._detect_current_app_windows()
-            else:
-                logger.warning(f"Unsupported platform: {self.platform}")
-                
+            detected_app = optimized_app_detector.detect_current_app()
+            
+            # Only update if app changed
+            if detected_app != self.current_app:
+                self.current_app = detected_app
+                if detected_app:
+                    logger.info(f"🎯 App detected: {detected_app}")
+                else:
+                    logger.info("🎯 No art app active")
+                    
         except Exception as e:
-            logger.error(f"Error detecting current app: {e}")
+            logger.error(f"Error detecting app: {e}")
             self.current_app = None
     
     def _detect_current_app_macos(self):
@@ -1377,9 +1324,16 @@ class CrossPlatformArtRemoteServer:
             logger.error(f"Failed to start HTTP server: {e}")
             return False
     async def start_server(self):
-        """Start the WebSocket server and HTTP server"""
-        logger.info(f"Starting Cross-Platform Art Remote Server on {self.host}:{self.port}")
+        """Start the WebSocket server and HTTP server with performance optimizations"""
+        logger.info(f"🚀 Starting Optimized Cross-Platform Art Remote Server on {self.host}:{self.port}")
         self.is_running = True
+        
+        # Apply performance optimizations
+        apply_performance_optimizations(self)
+        
+        # Start performance systems
+        if hasattr(self, 'start_performance_systems'):
+            await self.start_performance_systems()
         
         # Start HTTP server for web interface
         self.start_http_server()
@@ -1388,10 +1342,17 @@ class CrossPlatformArtRemoteServer:
         async def websocket_handler(websocket):
             await self.register_client(websocket, "/")
         
-        async with websockets.serve(websocket_handler, self.host, self.port):
-            logger.info("WebSocket server started successfully!")
-            logger.info(f"🌐 Open http://localhost:{self.http_port} on your phone to control your PC!")
-            await asyncio.Future()  # Run forever
+        try:
+            async with websockets.serve(websocket_handler, self.host, self.port):
+                logger.info("✅ WebSocket server started successfully!")
+                logger.info(f"🌐 Open http://localhost:{self.http_port} on your phone to control your PC!")
+                logger.info("🚀 Performance optimizations active")
+                await asyncio.Future()  # Run forever
+        finally:
+            # Cleanup performance systems
+            if hasattr(self, 'stop_performance_systems'):
+                await self.stop_performance_systems()
+            performance_optimizer.close()
     
     def stop_server(self):
         """Stop the server"""
